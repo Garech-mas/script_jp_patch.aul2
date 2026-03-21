@@ -1,0 +1,49 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  build:
+    runs-on: windows-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          submodules: "recursive"
+
+      - name: Set up cargo-binstall
+        uses: taiki-e/install-action@v2
+        with:
+          tool: cargo-binstall
+
+      - name: Set up mise
+        uses: jdx/mise-action@v3
+        with:
+          install: true
+          experimental: true
+
+      - name: Prepare artifacts
+        shell: bash
+        run: |
+          au2 release -p akey_zip --set-version "${{ github.event.inputs.version }}"
+          mv -f "release/スクリプト日本語化パッチ.au2pkg.zip" "release/日本語(アクセスキー付き).スクリプト日本語化パッチ.au2pkg.zip"
+          au2 release --set-version "${{ github.event.inputs.version }}"
+
+      - name: Create GitHub Release (draft)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.version }}
+          name: スクリプト日本語化パッチ v${{ github.event.inputs.version }}
+          draft: true
+          body: |
+            以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
+            - `スクリプト日本語化パッチ.au2pkg.zip` (通常版)
+            - `日本語(アクセスキー付き).スクリプト日本語化パッチ.au2pkg.zip` ([アクセスキー付きリソース](https://github.com/Garech-mas/jp_akey.aul2)との共存版)
+          # アップロードするファイル
+          files: |
+            ./release/*.au2pkg.zip
