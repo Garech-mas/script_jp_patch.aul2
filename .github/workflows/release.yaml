@@ -1,9 +1,11 @@
 name: Release Build
 
 on:
-  push:
-    tags:
-      - "*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release (e.g. 2026.03.21)"
+        required: true
 
 jobs:
   build:
