@@ -40,7 +40,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.version }}
-          name: ${{ github.event.inputs.version }}
+          name: スクリプト日本語化パッチ ${{ github.event.inputs.version }}
           draft: true
           overwrite_files: true
           preserve_order: true
