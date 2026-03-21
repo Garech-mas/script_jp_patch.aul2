@@ -1,0 +1,2 @@
+# script_jp_patch.aul2
+AviUtl2のスクリプトを完全に日本語化する言語ファイル
