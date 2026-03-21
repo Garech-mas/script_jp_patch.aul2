@@ -33,14 +33,14 @@ jobs:
         shell: bash
         run: |
           au2 release -p akey_zip --set-version "${{ github.event.inputs.version }}"
-          mv -f "release/スクリプト日本語化パッチ.au2pkg.zip" "release/日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip"
+          mv -f "release/script_jp_patch.au2pkg.zip" "release/jp_akey_aul2_script_jp_patch.au2pkg.zip"
           au2 release --set-version "${{ github.event.inputs.version }}"
 
       - name: Create GitHub Release (draft)
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.version }}
-          name: スクリプト日本語化パッチ ${{ github.event.inputs.version }}
+          name: ${{ github.event.inputs.version }}
           draft: true
           overwrite_files: true
           preserve_order: true
@@ -52,5 +52,5 @@ jobs:
 
             ※必ず[最新バージョンのAviUtl2](https://spring-fragrance.mints.ne.jp/aviutl/)を導入してください。
           files: |
-            release/スクリプト日本語化パッチ.au2pkg.zip
-            release/日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip
+            release/script_jp_patch.au2pkg.zip|スクリプト日本語化パッチ.au2pkg.zip
+            release/jp_akey_aul2_script_jp_patch.au2pkg.zip|日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip
