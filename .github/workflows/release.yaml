@@ -43,6 +43,7 @@ jobs:
         run: |
           gh release create "${{ github.event.inputs.version }}" \
             --title "スクリプト日本語化パッチ ${{ github.event.inputs.version }}" \
+            --draft \
             --notes "---
             以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
           - \`スクリプト日本語化パッチ.au2pkg.zip\` (通常版)
