@@ -1,0 +1,649 @@
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.20
+; ----------------------------------------------------------
+; ※最重要（必ず守ってください！）
+; ○他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
+; ----------------------------------------------------------
+; ※この言語ファイルの導入前に一度ご確認ください。
+; 1. 本翻訳は可読性、AviUtl/AE互換性、用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
+; 2. 各スクリプトの更新により、一部項目が未翻訳となる場合があります。
+; 3. 各スクリプトのバグを報告する際は、本ファイルを外して確認してください。
+; 4. 本ファイルの使用により生じた問題について、責任は負いかねます。
+; ----------------------------------------------------------
+; ※各スクリプト製作者様・翻訳者様へ
+; 1. 翻訳削除の要望には対応いたしかねます。
+;    ただし、翻訳により著しく可読性・利便性を損なう場合に限り、例外的に検討する場合があります。
+; 2. 誤訳報告や翻訳追加要望などがあれば、お気軽にご連絡ください！
+; ----------------------------------------------------------
+; 本ファイルは MIT License のもとで配布されます。
+; 再配布・改変する場合、本注意書きおよび免責事項を削除しないでください。
+; また、利用者がダウンロード前に本注意書きおよび免責事項を確認できるよう努めてください。
+;
+
+; azurite氏のスクリプト https://github.com/azurite581
+[DepthMapFilter]
+DepthMapFilter=深度マップフィルタ(DepthMapFilter)
+GRAY=グレースケール (GRAY)
+AUTUMN=秋色 (AUTUMN)
+BONE=ボーン (BONE)
+JET=ジェット (JET)
+WINTER=冬色 (WINTER)
+RAINBOW=レインボー (RAINBOW)
+OCEAN=オーシャン (OCEAN)
+SUMMER=夏色 (SUMMER)
+SPRING=春色 (SPRING)
+COOL=クール (COOL)
+HSV=HSV (HSV)
+PINK=ピンク (PINK)
+HOT=ホット (HOT)
+PARULA=パルラ (PARULA)
+MAGMA=マグマ (MAGMA)
+INFERNO=インフェルノ (INFERNO)
+PLASMA=プラズマ (PLASMA)
+VIRIDIS=ビリディス (VIRIDIS)
+CIVIDIS=シビディス (CIVIDIS)
+TWILIGHT=トワイライト (TWILIGHT)
+TWILIGHT_SHIFTED=トワイライトシフト (TWILIGHT_SHIFTED)
+TURBO=ターボ (TURBO)
+DEEPGREEN=ディープグリーン (DEEPGREEN)
+[GradientMap@GradientEditor]
+GradientMap@GradientEditor=グラデーションマップ@GradientEditor(GradientMap)
+[MultiGradient@GradientEditor]
+MultiGradient@GradientEditor=多色グラデーション@GradientEditor(MultiGradient)
+[Hex-Tiling]
+Hex-Tiling=六角形タイル(Hex-Tiling)
+
+; σ軸氏のスクリプト https://github.com/sigma-axis
+[AutoClipping_S]
+AutoClipping_S=ぴったりクリッピングσ(AutoClipping_S)
+[ColoredCollar_S]
+ColoredCollar_S=ふち色縁取りσ(ColoredCollar_S)
+[Histogram_S]
+Histogram_S=ヒストグラムσ(Histogram_S)
+[GroundShadow2_S]
+GroundShadow2_S=影落とし2σ(GroundShadow2_S)
+[PixelSnap_S]
+PixelSnap_S=ピクセル揃えσ(PixelSnap_S)
+[RadRotDirBlur_S]
+RadRotDirBlur_S=放射回転方向ブラーσ(RadRotDirBlur_S)
+
+; かろてら氏のスクリプト https://github.com/karoterra
+[色覚シミュレーションKR]
+Severity=強度
+Type=タイプ
+Normal=通常
+Protan=1型色覚(P型)
+Deutan=2型色覚(D型)
+Tritan=3型色覚(T型)
+Achromat=全色盲
+
+; KORAREI氏のスクリプト https://github.com/korarei
+[AutoLyricAnimation_K]
+AutoLyricAnimation_K=全自動リリックモーションK(AutoLyricAnimation_K)
+Ref Motion=移動位置
+Max Dist=最大移動量
+Spread=広がり
+Speed=移動速度
+Interval=表示間隔
+Move X=X移動
+Move Y=Y移動
+Omni Dirs=全方向
+Inv Dirs=方向反転
+Type=タイプ
+In=登場
+Out=退場
+In/Out=登退場
+Entry Scale=登場拡大率
+Entry Rand Flip=登場時に確率で反転
+Exit Scale=退場拡大率
+Exit Rand Flip=退場時に確率で反転
+Seed=シード値
+[ColorLUT_K]
+LUT File=LUTファイル
+Reload LUT=LUTファイルを再読み込み
+Compositing=合成
+Blend Mode=合成モード
+Normal=通常
+Dissolve=ディザ合成
+Darken=比較(暗)
+Multiply=乗算
+Color Burn=焼き込み(カラー)
+Linear Burn=焼き込み(リニア)
+Darker Color=カラー比較(暗)
+Lighten=比較(明)
+Screen=スクリーン
+Color Dodge=覆い焼き(カラー)
+Linear Dodge (Add)=覆い焼き(リニア)・加算
+Lighter Color=カラー比較(明)
+Overlay=オーバーレイ
+Soft Light=ソフトライト
+Hard Light=ハードライト
+Linear Light=リニアライト
+Vivid Light=ビビッドライト
+Pin Light=ピンライト
+Hard Mix=ハードミックス
+Difference=差分
+Exclusion=除外
+Subtract=減算
+Divide=除算
+Hue=色相
+Saturation=彩度
+Color=カラー
+Luminosity=輝度
+Opacity=透明度
+Clamp=クランプ
+[Constraint]
+Constraint=くっつけ配置(Constraint)
+Image=ファイル
+Image Layer=レイヤー番号
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
+Layout=配置
+Position=位置
+Top=上側
+Right=右側
+Bottom=下側
+Left=左側
+Cross Offset=別方向ずらし
+Padding=余白
+Transform=変形
+Rotation=回転
+Scale=拡大率
+[Kaleidoscope_K]
+Kaleidoscope_K=万華鏡K(Kaleidoscope_K)
+X Center=中心X
+Y Center=中心Y
+Tile Size=サイズ
+Rotation=回転
+Scale=拡大率
+Floating Center=中心点を移動する
+Mirroring=形状
+Unfold=展開 (Unfold)
+Wheel=ホイール (Wheel)
+Fish Head=魚頭 (Fish Head)
+Can Meas=缶詰 (Can Meas)
+Flip Flop=宙返り (Flip Flop)
+Flower=花 (Flower)
+Dia Cross=交差 (Dia Cross)
+Flipper=ヒレ (Flipper)
+Starlish=ヒトデ (Starlish)
+Tiler=タイル (Tiler)
+[HaldCLUT_K]
+Level=レベル
+Resize Scene to LUT=シーンサイズをLUTに合わせる
+[PixelSorter_K]
+PixelSorter_K=ピクセルソートK(PixelSorter_K)
+Sort By=ソート基準
+Luminance (BT.601)=輝度 (BT.601)
+Luminance (BT.709)=輝度 (BT.709)
+Luminance (BT.2020)=輝度 (BT.2020)
+RGB Average=RGB平均
+RGB Product=RGB乗算
+RGB Minimum=RGB最小
+RGB Maximum=RGB最大
+Sort From=ソート開始値
+Sort To=ソート終了値
+Direction=方向
+Color Space=色空間
+Linear=Linear
+sRGB=sRGB
+Mask=マスク
+[ObjectMotionBlur_LK]
+ObjectMotionBlur_LK=モーションブラーLK(ObjectMotionBlur_LK)
+Shutter Angle=ブラー幅
+Sample Limit=出力精度
+Preview Limit=プレビュー精度
+Extrapolation=前フレーム補完
+None=なし
+Linear=線形
+Quadratic=2次
+Resize=サイズ調整
+Mix=残像合成
+Cache Settings=キャッシュ設定
+Geo Cache=座標キャッシュ
+Full=全保存
+Minimal=最低限のみ保存
+Cache Purge=キャッシュ削除
+Auto=自動削除
+All=全削除
+Active=このオブジェクトのみ削除
+Additional Options=追加設定
+Print Information=ログ表示
+[Transform]
+Transform=トランスフォーム(Transform)
+Position=位置
+Rotation=回転
+W Rotation=W回転
+X Rotation=X回転
+Y Rotation=Y回転
+Z Rotation=Z回転
+Rotation Mode=回転モード
+Quaternion=クォータニオン
+Axis Angle=任意軸回転
+XYZ Euler=XYZオイラー角
+XZY Euler=XZYオイラー角
+YXZ Euler=YXZオイラー角
+YZX Euler=YZXオイラー角
+ZXY Euler=ZXYオイラー角
+ZYX Euler=ZYXオイラー角
+Scale=拡大率
+X Scale=X拡大率
+Y Scale=Y拡大率
+Z Scale=Z拡大率
+[Transform@CameraTransform_K]
+Transform@CameraTransform_K=トランスフォーム@CameraTransform_K(Transform)
+Position=位置
+Rotation=回転
+W Rotation=W回転
+X Rotation=X回転
+Y Rotation=Y回転
+Z Rotation=Z回転
+Rotation Mode=回転モード
+Quaternion=クォータニオン
+Axis Angle=任意軸回転
+XYZ Euler=XYZオイラー角
+XZY Euler=XZYオイラー角
+YXZ Euler=YXZオイラー角
+YZX Euler=YZXオイラー角
+ZXY Euler=ZXYオイラー角
+ZYX Euler=ZYXオイラー角
+Parent Layer=親レイヤー
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
+[Parent@CameraTransform_K]
+Parent@CameraTransform_K=親@CameraTransform_K(Parent)
+W Rotation=W回転
+X Rotation=X回転
+Y Rotation=Y回転
+Z Rotation=Z回転
+Rotation Mode=回転モード
+Quaternion=クォータニオン
+Axis Angle=任意軸回転
+XYZ Euler=XYZオイラー角
+XZY Euler=XZYオイラー角
+YXZ Euler=YXZオイラー角
+YZX Euler=YZXオイラー角
+ZXY Euler=ZXYオイラー角
+ZYX Euler=ZYXオイラー角
+Zoom=拡大率
+[Track@CameraTransform_K]
+Track@CameraTransform_K=トラック@CameraTransform_K(Track)
+Target Layer=目標レイヤー
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
+Influence=影響度
+[Saturate@Stylize_K]
+Saturate@Stylize_K=サチュレート@Stylize_K(Saturate)
+R Gain=Rゲイン
+G Gain=Gゲイン
+B Gain=Bゲイン
+A Gain=透明度ゲイン
+Color Space=色空間
+Mix=合成量
+[Mosaic@Stylize_K]
+Mosaic@Stylize_K=モザイク@Stylize_K(Mosaic)
+X Blocks=横サイズ
+Y Blocks=縦サイズ
+Sharp Colors=色くっきり
+[Threshold@Stylize_K]
+Threshold@Stylize_K=２値化@Stylize_K(Threshold)
+Threshold=しきい値
+Channel=チャンネル
+Luminance (BT.601)=輝度(BT.601)
+Luminance (BT.709)=輝度(BT.709)
+Luminance (BT.2020)=輝度(BT.2020)
+Value=明度
+Saturation=彩度
+Hue=色相
+Alpha=透明度
+Invert=反転
+Light Color=明部色
+Light Alpha=明部透明度
+Dark Color=暗部色
+Dark Alpha=暗部透明度
+Color Space=色空間
+Mix=合成量
+[Threshold(RGBA)@Stylize_K]
+Threshold(RGBA)@Stylize_K=２値化(色個別)@Stylize_K(Threshold(RGBA))
+R Threshold=Rしきい値
+G Threshold=Gしきい値
+B Threshold=Bしきい値
+A Threshold=透明度閾値
+Invert R=R反転
+Invert G=G反転
+Invert B=B反転
+Invert A=透明度反転
+Disable A Threshold=透明度を無効化
+Color Space=色空間
+Mix=合成量
+[Posterize@Stylize_K]
+Posterize@Stylize_K=ポスタリゼーション@Stylize_K(Posterize)
+Level=階調数
+Channel=チャンネル
+RGB=RGB
+RGBA=RGBA
+Value=明度
+Value A=明度+透明度
+Size=サイズ
+Sharp Colors=色くっきり
+Color Space=色空間
+Mix=合成量
+[Posterize(RGBA)@Stylize_K]
+Posterize(RGBA)@Stylize_K=ポスタリゼーション(色個別)@Stylize_K(Posterize(RGBA))
+R Level=R階調数
+G Level=G階調数
+B Level=B階調数
+A Level=透明度階調数
+Disable A Level=透明度を無効化
+Size=サイズ
+Sharp Colors=色くっきり
+Color Space=色空間
+Mix=合成量
+[ASCII@Stylize_K]
+ASCII@Stylize_K=アスキーアート@Stylize_K(ASCII)
+Glyphs=使用文字
+Font=フォント
+Padding=余白
+X Blocks=横個数
+Y Blocks=縦個数
+Sharp Colors=色くっきり
+Luma Gain=輝度ゲイン
+Min Luma=最小輝度
+Max Luma=最大輝度
+Luma Mode=輝度モード
+Invert Luma=輝度反転
+Glyph Type=文字色タイプ
+Glyph Color=文字色
+Canvas Type=背景タイプ
+Canvas Color=背景色
+Color Space=色空間
+Alpha=透明モード
+Blend Mode=合成モード
+Mix=合成量
+Shuffle Glyphs=文字シャッフル
+Excluded Glyphs=除外文字
+Interval=間隔
+Seed=シード値
+Solid=単色
+Original=元画像
+Mosaic=モザイク
+Transparent=透明
+None=なし
+Premultiplied=乗算済み
+Normal=通常
+Add=加算
+Subtract=減算
+Multiply=乗算
+Screen=スクリーン
+Overlay=オーバーレイ
+Lighten=比較(明)
+Darken=比較(暗)
+Luminosity=輝度
+Chroma=色差
+Linear Burn=陰影
+Linear Light=明暗
+Difference=差分
+[MotionTile@Stylize_K]
+MotionTile@Stylize_K=モーションタイル@Stylize_K(MotionTile)
+X Center=中心X
+Y Center=中心Y
+Output W=出力幅
+Output H=出力高さ
+Tile W=タイル幅
+Tile H=タイル高さ
+Mirror Horizontal Edge=X反転配置
+Mirror Vertical Edge=Y反転配置
+Phase=ずらし
+Horizontal Shift=横ずらし
+[Tile@Stylize_K]
+Tile@Stylize_K=画像ループ2@Stylize_K(Tile)
+X Count=X個数
+Y Count=Y個数
+Z Count=Z個数
+X Gap=X間隔
+Y Gap=Y間隔
+Z Gap=Z間隔
+X Offset=Xオフセット
+Y Offset=Yオフセット
+Center Align=中央揃え
+Use Group Pivot=グループ基準
+Z Size=Zサイズ
+[Repeat@Stylize_K]
+Repeat@Stylize_K=リピート配置@Stylize_K(Repeat)
+Count=個数
+Offset=開始位置
+Composite=合成順序
+Below=下に合成
+Above=上に合成
+Sync with Output Effect=標準描画に同期
+X Rotation=X軸回転
+Y Rotation=Y軸回転
+Z Rotation=Z軸回転
+Zoom=拡大差
+Start Alpha=開始透明度
+End Alpha=終了透明度
+[GradientMap@Stylize_K]
+GradientMap@Stylize_K=グラデーションマップ@Stylize_K(GradientMap)
+Map File=ファイル
+Map Layer=レイヤー
+Use Relative Layer=レイヤーを相対指定
+View Map=マップ表示
+Map Hue=マップ色相
+Map Slice=マップ位置
+Map Scale=マップ倍率
+Map Shift=マップ横ずらし
+Map Edges=端の処理
+Invert Luma=輝度反転
+Luma Mode=輝度方式
+Color Space=色空間
+Blend Mode=合成モード
+Mix=合成量
+Clamp=端固定
+Repeat=繰り返し
+Mirror=折り返し
+Normal=通常
+Add=加算
+Subtract=減算
+Multiply=乗算
+Screen=スクリーン
+Overlay=オーバーレイ
+Lighten=比較(明)
+Darken=比較(暗)
+Luminosity=輝度
+Chroma=色差
+Linear Burn=陰影
+Linear Light=明暗
+Difference=差分
+[Unpremultiply@Stylize_K]
+Unpremultiply@Stylize_K=黒色背景透過@Stylize_K(Unpremultiply)
+Gain=強さ
+
+; こんにゃくねこ氏のスクリプト https://github.com/CatWithNeko/aviutl2-scripts
+[3x3Filter]
+3x3Filter=3×3フィルタ(3x3Filter)
+Mult=強さ
+[Canny]
+Canny=Cannyエッジ抽出(Canny)
+Blur=ぼかし
+High=高しきい値
+Low=低しきい値
+Connect=連結回数
+[Chromatic Aberration]
+Chromatic Aberration=色収差(Chromatic Aberration)
+X=ずれX
+Y=ずれY
+CenterX=中心X
+CenterY=中心Y
+Zoom=拡大率
+Channel=色チャンネル
+Bidrectional=双方向
+[Colorama]
+Colorama=簡易コロラマ(Colorama)
+Shift=ずらし
+Cycle=周期
+Step=段階
+Color1=色1
+Color2=色2
+Color3=色3
+Color4=色4
+Color5=色5
+Color6=色6
+Lum Mode=輝度モード
+bt-601=BT.601
+bt-709=BT.709
+bt-2020=BT.2020
+mean=平均
+Invert=反転
+Blend Mode=合成モード
+none=通常
+add=加算
+sub=減算
+mul=乗算
+screen=スクリーン
+overlay=オーバーレイ
+light=比較(明)
+dark=比較(暗)
+brightness=輝度
+chroma=色差
+shadow=陰影
+light_dark=明暗
+diff=差分
+alpha_add=アルファ加算
+alpha_max=アルファ最大
+alpha_sub=アルファ減算
+alpha_add2=アルファ加算2
+mix=合成量
+[Composite]
+Composite=フィルタ前後合成(Composite)
+Opacity=透明度
+Blend Mode=合成モード
+none=通常
+add=加算
+sub=減算
+mul=乗算
+screen=スクリーン
+overlay=オーバーレイ
+light=比較(明)
+dark=比較(暗)
+brightness=輝度
+chroma=色差
+shadow=陰影
+light_dark=明暗
+diff=差分
+alpha_add=アルファ加算
+alpha_max=アルファ最大
+alpha_sub=アルファ減算
+alpha_add2=アルファ加算2
+Reverse=反転
+[Dither]
+Dither=ザラザラ二値化(Dither)
+threshold=しきい値
+strength=強さ
+seed=シード値
+size=サイズ
+Color1=色1
+Color2=色2
+[Erosion]
+Erosion=縁削り(Erosion)
+strength=強さ
+[Exposure]
+Exposure=露光量(Exposure)
+Gamma=ガンマ
+Offset=オフセット
+[Gamma]
+Gamma=ガンマ補正(Gamma)
+[Halftone]
+Halftone=ハーフトーン(Halftone)
+Size=サイズ
+Scale=拡大率
+Blur=ぼかし
+Color1=色1
+Color2=色2
+Blend=合成
+BlendMode=合成モード
+Mix=合成量
+[Leave Color]
+Leave Color=色抜き(Leave Color)
+Threshold=しきい値
+Color=保持色
+Lum Mode=輝度モード
+Mean=平均
+Invert=反転
+[Lens]
+Lens=レンズ補正(Lens)
+Distortion=歪み量
+Pow=指数
+Limit=下限
+[Level]
+Level=レベル補正(Level)
+Min=最小
+Max=最大
+[LongShadow]
+LongShadow=ロングシャドウ(LongShadow)
+Length=長さ
+Angle=角度
+Alpha=透明度
+Start=開始色
+Grad=グラデーション
+End=終了色
+Transparent=透過
+ShadowOnly=影のみ
+FixRotate=回転補正
+Flat=双方向
+[MaxMin]
+MaxMin=最大最小(MaxMin)
+Max/Min=最大/最小
+Scale=範囲
+Angle=角度
+[SelfDisplace]
+SelfDisplace=自己ディスプレイス(SelfDisplace)
+Off X=オフセットX
+Off Y=オフセットY
+Rotate=回転
+Zoom=拡大率
+Zoom X=横拡大率
+Zoom Y=縦拡大率
+Blur=ぼかし
+Rel R=R影響
+Rel G=G影響
+Rel B=B影響
+Mode=モード
+Luminance (BT.601)=輝度（BT.601）
+Luminance (BT.709)=輝度（BT.709）
+Luminance (BT.2020)=輝度（BT.2020）
+Mean=平均
+Invert=反転
+Bidirectional=双方向
+[Turbulent]
+Turbulent=タービュレント(Turbulent)
+Amount=歪み量
+Scale=拡大率
+Speed=変化速度
+Seed=シード値
+Blur=ぼかし
+Expansion=領域拡張
+[Wave Warp]
+Wave Warp=ラスター(Wave Warp)
+Amp=振幅
+Length=波長
+Phase=位相
+speed=周期
+Angle=角度
+Expand=領域拡張
+Type=波形
+sin=正弦波
+saw=ノコギリ波
+tri=三角波
+square=矩形波
+
+; 名無し｡氏のスクリプト https://github.com/sevenc-nanashi
+[disassembler.anm2]
+disassembler.anm2=パーツ分割(disassembler.anm2)
+[transform_specific_chars.anm2]
+transform_specific_chars.anm2=特定文字変形(transform_specific_chars.anm2)
+
+; mes氏のスクリプト https://github.com/mes51
+[Unmult]
+Unmult=黒色/白色背景透過(Unmult)
