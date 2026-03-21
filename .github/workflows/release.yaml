@@ -40,16 +40,17 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.event.inputs.version }}
-          name: スクリプト日本語化パッチ v${{ github.event.inputs.version }}
+          name: ${{ github.event.inputs.version }}
           draft: true
-          # 正しい上書きオプション
           overwrite_files: true
-          # 順番に処理することを保証する（同時アップロードによる衝突を防ぐ）
           preserve_order: true
           body: |
+            ---
             以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
             - `スクリプト日本語化パッチ.au2pkg.zip` (通常版)
             - `日本語(アクセスキー付き).スクリプト日本語化パッチ.au2pkg.zip` ([アクセスキー付きリソース](https://github.com/Garech-mas/jp_akey.aul2)との共存版)
+
+            ※必ず[最新バージョンのAviUtl2](https://spring-fragrance.mints.ne.jp/aviutl/)を導入してください。
           files: |
             release/スクリプト日本語化パッチ.au2pkg.zip
             release/日本語(アクセスキー付き).スクリプト日本語化パッチ.au2pkg.zip
