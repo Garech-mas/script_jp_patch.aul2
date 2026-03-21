@@ -42,7 +42,10 @@ jobs:
           tag_name: ${{ github.event.inputs.version }}
           name: スクリプト日本語化パッチ v${{ github.event.inputs.version }}
           draft: true
-          overwrite: true
+          # 正しい上書きオプション
+          overwrite_files: true
+          # 順番に処理することを保証する（同時アップロードによる衝突を防ぐ）
+          preserve_order: true
           body: |
             以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
             - `スクリプト日本語化パッチ.au2pkg.zip` (通常版)
