@@ -36,21 +36,23 @@ jobs:
           mv -f "release/script_jp_patch.au2pkg.zip" "release/jp_akey_aul2_script_jp_patch.au2pkg.zip"
           au2 release --set-version "${{ github.event.inputs.version }}"
 
-      - name: Create GitHub Release (draft)
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ github.event.inputs.version }}
-          name: ${{ github.event.inputs.version }}
-          draft: true
-          overwrite_files: true
-          preserve_order: true
-          body: |
+      - name: Create GitHub Release
+        id: create_release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ github.event.inputs.version }}" \
+            --title "${{ github.event.inputs.version }}" \
+            --notes-file - <<EOF
             ---
             以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
-            - `スクリプト日本語化パッチ.au2pkg.zip` (通常版)
-            - `日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip` ([アクセスキー付きリソース](https://github.com/Garech-mas/jp_akey.aul2)との共存版)
+            - \`スクリプト日本語化パッチ.au2pkg.zip\` (通常版)
+            - \`日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip\` ([アクセスキー付きリソース](https://github.com/Garech-mas/jp_akey.aul2)との共存版)
 
             ※必ず[最新バージョンのAviUtl2](https://spring-fragrance.mints.ne.jp/aviutl/)を導入してください。
-          files: |
-            release/script_jp_patch.au2pkg.zip|スクリプト日本語化パッチ.au2pkg.zip
-            release/jp_akey_aul2_script_jp_patch.au2pkg.zip|日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip
+          EOF
+
+          gh release upload "${{ github.event.inputs.version }}" \
+            "release/script_jp_patch.au2pkg.zip#スクリプト日本語化パッチ.au2pkg.zip" \
+            "release/jp_akey_aul2_script_jp_patch.au2pkg.zip#日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip" \
+            --clobber
