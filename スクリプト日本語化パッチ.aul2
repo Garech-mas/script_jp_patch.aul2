@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.20
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.22
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
 ; ○他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -76,7 +76,7 @@ Deutan=2型色覚(D型)
 Tritan=3型色覚(T型)
 Achromat=全色盲
 
-; KORAREI氏のスクリプト https://github.com/korarei
+; KORAREI氏のスクリプト https://github.com/korarei https://gist.github.com/korarei https://scrapbox.io/korarei
 [AutoLyricAnimation_K]
 AutoLyricAnimation_K=全自動リリックモーションK(AutoLyricAnimation_K)
 Ref Motion=移動位置
@@ -129,7 +129,7 @@ Hue=色相
 Saturation=彩度
 Color=カラー
 Luminosity=輝度
-Opacity=透明度
+Opacity=不透明度
 Clamp=クランプ
 [Constraint]
 Constraint=くっつけ配置(Constraint)
@@ -149,6 +149,9 @@ Padding=余白
 Transform=変形
 Rotation=回転
 Scale=拡大率
+[FlexUI]
+FlexUI=汎用トラックバー(FlexUI)
+Table Name=テーブル名
 [Kaleidoscope_K]
 Kaleidoscope_K=万華鏡K(Kaleidoscope_K)
 X Center=中心X
@@ -279,7 +282,7 @@ Saturate@Stylize_K=サチュレート@Stylize_K(Saturate)
 R Gain=Rゲイン
 G Gain=Gゲイン
 B Gain=Bゲイン
-A Gain=透明度ゲイン
+A Gain=不透明度ゲイン
 Color Space=色空間
 Mix=合成量
 [Mosaic@Stylize_K]
@@ -297,12 +300,12 @@ Luminance (BT.2020)=輝度(BT.2020)
 Value=明度
 Saturation=彩度
 Hue=色相
-Alpha=透明度
+Alpha=不透明度
 Invert=反転
 Light Color=明部色
-Light Alpha=明部透明度
+Light Alpha=明部不透明度
 Dark Color=暗部色
-Dark Alpha=暗部透明度
+Dark Alpha=暗部不透明度
 Color Space=色空間
 Mix=合成量
 [Threshold(RGBA)@Stylize_K]
@@ -310,7 +313,7 @@ Threshold(RGBA)@Stylize_K=２値化(色個別)@Stylize_K(Threshold(RGBA))
 R Threshold=Rしきい値
 G Threshold=Gしきい値
 B Threshold=Bしきい値
-A Threshold=透明度閾値
+A Threshold=不透明度閾値
 Invert R=R反転
 Invert G=G反転
 Invert B=B反転
@@ -320,7 +323,7 @@ Color Space=色空間
 Mix=合成量
 [Posterize@Stylize_K]
 Posterize@Stylize_K=ポスタリゼーション@Stylize_K(Posterize)
-Level=階調数
+Level=レベル
 Channel=チャンネル
 RGB=RGB
 RGBA=RGBA
@@ -332,10 +335,10 @@ Color Space=色空間
 Mix=合成量
 [Posterize(RGBA)@Stylize_K]
 Posterize(RGBA)@Stylize_K=ポスタリゼーション(色個別)@Stylize_K(Posterize(RGBA))
-R Level=R階調数
-G Level=G階調数
-B Level=B階調数
-A Level=透明度階調数
+R Level=Rレベル
+G Level=Gレベル
+B Level=Bレベル
+A Level=不透明度レベル
 Disable A Level=透明度を無効化
 Size=サイズ
 Sharp Colors=色くっきり
@@ -422,8 +425,8 @@ X Rotation=X軸回転
 Y Rotation=Y軸回転
 Z Rotation=Z軸回転
 Zoom=拡大差
-Start Alpha=開始透明度
-End Alpha=終了透明度
+Start Alpha=開始不透明度
+End Alpha=終了不透明度
 [GradientMap@Stylize_K]
 GradientMap@Stylize_K=グラデーションマップ@Stylize_K(GradientMap)
 Map File=ファイル
@@ -517,7 +520,7 @@ alpha_add2=アルファ加算2
 mix=合成量
 [Composite]
 Composite=フィルタ前後合成(Composite)
-Opacity=透明度
+Opacity=不透明度
 Blend Mode=合成モード
 none=通常
 add=加算
@@ -584,7 +587,7 @@ Max=最大
 LongShadow=ロングシャドウ(LongShadow)
 Length=長さ
 Angle=角度
-Alpha=透明度
+Alpha=不透明度
 Start=開始色
 Grad=グラデーション
 End=終了色
@@ -647,3 +650,17 @@ transform_specific_chars.anm2=特定文字変形(transform_specific_chars.anm2)
 ; mes氏のスクリプト https://github.com/mes51
 [Unmult]
 Unmult=黒色/白色背景透過(Unmult)
+
+; ぞぷてい氏のスクリプト https://github.com/zopty https://gist.github.com/zopty
+[OpticalFlowMotionBlur]
+OpticalFlowMotionBlur=疑似モーションブラー(OpticalFlowMotionBlur)
+[Reverb Effect]
+Reverb Effect=リバーブ(Reverb Effect)
+Mix=ミックス
+Decay=残響時間
+Soft=減衰率
+Cross=左右混合
+[SmoothNoise]
+SmoothNoise=スムースノイズ(SmoothNoise)
+[TrueNoise]
+TrueNoise=本当のノイズ(TrueNoise)
