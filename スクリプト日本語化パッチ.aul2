@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.22
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.31
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
 ; ○他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -462,6 +462,38 @@ Difference=差分
 [Unpremultiply@Stylize_K]
 Unpremultiply@Stylize_K=黒色背景透過@Stylize_K(Unpremultiply)
 Gain=強さ
+[GaussianBlur@Diffusion_K]
+GaussianBlur@Diffusion_K=ガウシアンぼかし@Diffusion_K(GaussianBlur)
+Blurriness=強さ
+Dimensions=方向
+Horizontal=横
+Vertical=縦
+Horizontal and Vertical=縦と横
+Resize=リサイズ
+[Orton@Diffusion_K]
+Orton@Diffusion_K=オートン効果@Diffusion_K(Orton)
+Intensity=強さ
+Blurriness=ぼかし強さ
+Mask=マスク
+Low=しきい値(下)
+High=しきい値(上)
+Softness=柔らかさ
+Invert=マスクの反転
+Compositing=合成
+Blend Mode=合成モード
+Normal=通常
+Dissolve=ディザ合成
+Darken=比較(暗)
+Multiply=乗算
+Color Burn=焼き込み(カラー)
+Linear Burn=焼き込み(リニア)
+Darker Color=カラー比較(暗)
+Lighten=比較(明)
+Screen=スクリーン
+Color Dodge=覆い焼き(カラー)
+Linear Dodge (Add)=覆い焼き(リニア)・加算
+Lighter Color=カラー比較(明)
+Clamp=飽和する
 
 ; こんにゃくねこ氏のスクリプト https://github.com/CatWithNeko/aviutl2-scripts
 [3x3Filter]
@@ -646,6 +678,8 @@ square=矩形波
 disassembler.anm2=パーツ分割(disassembler.anm2)
 [transform_specific_chars.anm2]
 transform_specific_chars.anm2=特定文字変形(transform_specific_chars.anm2)
+[budoux.obj2]
+budoux.obj2=自然改行テキスト(budoux.obj2)
 
 ; mes氏のスクリプト https://github.com/mes51
 [Unmult]
@@ -664,3 +698,216 @@ Cross=左右混合
 SmoothNoise=スムースノイズ(SmoothNoise)
 [TrueNoise]
 TrueNoise=本当のノイズ(TrueNoise)
+
+; Book-0225氏のスクリプト https://github.com/Book-0225
+[External Audio Processing 2 (Media)]
+External Audio Processing 2 (Media)=EAP2:メディアオブジェクト(Media)
+General Settings=全体設定
+Parameter Settings=パラメータ設定
+Show Param List=パラメータリストを表示
+Learn Param=パラメータを割り当て
+Reset Mapping=割り当てを解除
+Map 1=マップ１
+Param 1=パラメータ１
+Map 2=マップ２
+Param 2=パラメータ２
+Map 3=マップ３
+Param 3=パラメータ３
+Map 4=マップ４
+Param 4=パラメータ４
+MIDI Settings=MIDI設定
+Recv ID=受信ノートID
+MIDI File=MIDIファイル
+[External Audio Processing 2 Generator]
+External Audio Processing 2 Generator=EAP2:単純音生成(Generator)
+Waveform=波形
+Sine=サイン波
+Square=矩形波
+Triangle=三角波
+Saw=ノコギリ波
+White Noise=ホワイトノイズ
+Pink Noise=ピンクノイズ
+Frequency=周波数
+[External Audio Processing 2 MIDI Visualizer]
+External Audio Processing 2 MIDI Visualizer=EAP2:MIDI表示(MIDI Visualizer)
+MIDI File=MIDIファイル
+[External Audio Processing 2 Notes Send (Media)]
+External Audio Processing 2 Notes Send (Media)=EAP2:ノート送信(Notes Send (Media))
+ID=ノートID
+Note=音名
+[External Audio Processing 2]
+External Audio Processing 2=EAP2:VST適用
+General Settings=全体設定
+Wet=Wet
+; ↑Dry/Wetに関しては英語ママの方が視認性/認知度が高いため、英語残し
+Gain=ゲイン
+Apply to L=左チャンネルに適用
+Apply to R=右チャンネルに適用
+Parameter Settings=パラメータ設定
+Show Param List=パラメータリストを表示
+Learn Param=パラメータを割り当て
+Reset Mapping=割り当てを解除
+Map 1=マップ１
+Param 1=パラメータ１
+Map 2=マップ２
+Param 2=パラメータ２
+Map 3=マップ３
+Param 3=パラメータ３
+Map 4=マップ４
+Param 4=パラメータ４
+MIDI Settings=MIDI設定
+Recv ID=受信ノートID
+MIDI File=MIDIファイル
+Show Param List=パラメータ
+[External Audio Processing 2 Utility]
+External Audio Processing 2 Utility=EAP2:補助設定(Utility)
+Gain=ゲイン
+Pan(L-R)=パン(L-R)
+Swap(L/R)=左右チャンネル入れ替え
+Invert L=左チャンネルの位相を反転
+Invert R=右チャンネルの位相を反転
+Mono Mode=モノラル化
+Stereo (Off)=ステレオ(なし)
+Mix (L+R)=ミックス(L+R)
+Left to Stereo=左チャンネル
+Right to Stereo=右チャンネル
+[External Audio Processing 2 EQ]
+External Audio Processing 2 EQ=EAP2:イコライザー(EQ)
+Cut Filters=カットフィルタ
+Low Cut=ローカット
+High Cut=ハイカット
+EQ Bands=EQバンド
+Low Gain=低域ゲイン
+M-Low Gain=中低域ゲイン
+Mid Gain=中域ゲイン
+M-High Gain=中高域ゲイン
+High Gain=高域ゲイン
+Low Freq=低域周波数
+M-Low Freq=中低域周波数
+Mid Freq=中域周波数
+M-High Freq=中高域周波数
+High Freq=高域周波数
+[External Audio Processing 2 Stereo]
+External Audio Processing 2 Stereo=EAP2:ステレオ化(Stereo)
+Width=広がり
+Mid Level=Midレベル
+Side Level=Sideレベル
+[External Audio Processing 2 Dynamics]
+External Audio Processing 2 Dynamics=EAP2:ダイナミクス(Dynamics)
+Gate Settings=ゲート設定
+Gate Threshold=しきい値
+Gate Attack=アタック
+Gate Release=リリース
+Compressor Settings=コンプレッサー設定
+Comp Threshold=しきい値
+Comp Ratio=比率
+Comp Attack=アタック
+Comp Release=リリース
+Makeup Gain=補正ゲイン
+Limiter=リミッター
+[External Audio Processing 2 Spatial]
+External Audio Processing 2 Spatial=EAP2:ディレイ(Spatial)
+Delay Time=ディレイ時間
+Feedback=フィードバック
+Delay Mix=ディレイ割合
+Pseudo Width=疑似ステレオ化
+[External Audio Processing 2 Modulation]
+External Audio Processing 2 Modulation=EAP2:モジュレーション(Modulation)
+Chorus=コーラス
+Flanger=フランジャー
+Tremolo=トレモロ
+Rate=周波数
+Depth=深さ
+Feedback=フィードバック
+Delay=ディレイ時間
+Mix=ミックス
+[External Audio Processing 2 Distortion]
+External Audio Processing 2 Distortion=EAP2:ディストーション(Distortion)
+Overdrive=オーバードライブ
+Fuzz=ファズ
+Bitcrush=ビットクラッシュ
+Drive=ドライブ
+Tone=トーン
+Bits=ビット数
+Downsample=Downsample
+; ↑「ダウンサンプリング」では文字数が増えすぎてしまう　「ﾀﾞｳﾝｻﾝﾌﾟﾘﾝｸﾞ」もあまりしたくないので、苦渋の策で英語残し。
+Mix=ミックス
+Output=出力ゲイン
+[External Audio Processing 2 Maximizer]
+External Audio Processing 2 Maximizer=EAP2:マキシマイザー(Maximizer)
+Threshold=しきい値
+Ceiling=上限
+Release=リリース
+Lookahead=先読み時間
+[External Audio Processing 2 Chain Send]
+External Audio Processing 2 Chain Send=EAP2:チェイン送信(Chain Send)
+ID=チェインID
+Send Gain=送信ゲイン
+[External Audio Processing 2 Chain Comp]
+External Audio Processing 2 Chain Comp=EAP2:チェイン圧縮(Chain Comp)
+ID=チェインID
+Threshold=しきい値
+Ratio=比率
+Attack=アタック
+Release=リリース
+Makeup=補正ゲイン
+[External Audio Processing 2 Chain Gate]
+External Audio Processing 2 Chain Gate=EAP2:チェインゲート(Chain Gate)
+ID=チェインID
+Threshold=しきい値
+Ratio=比率
+Attack=アタック
+Release=リリース
+[External Audio Processing 2 Chain Dynamic EQ]
+External Audio Processing 2 Chain Dynamic EQ=EAP2:チェイン動的EQ(Chain Dynamic EQ)
+ID=チェインID
+Frequency=周波数
+Q=帯域幅
+Reduction=下げ幅
+Threshold=しきい値
+Attack=アタック
+Release=リリース
+[External Audio Processing 2 Chain Filter]
+External Audio Processing 2 Chain Filter=EAP2:チェインフィルタ(Chain Filter)
+ID=チェインID
+Base Freq=基準周波数
+Mod Depth=変動量
+Resonance=レゾナンス
+Attack=アタック
+Release=リリース
+[External Audio Processing 2 Reverb]
+External Audio Processing 2 Reverb=EAP2:リバーブ(Reverb)
+Room Size=部屋サイズ
+Damping=減衰
+Pre-Delay=プリディレイ
+Wet=Wet
+Mix=ミックス
+[External Audio Processing 2 Phaser]
+External Audio Processing 2 Phaser=EAP2:フェイザー(Phaser)
+Rate=周波数
+Depth=深さ
+Feedback=フィードバック
+Mix=ミックス
+[External Audio Processing 2 Pitch Shift]
+External Audio Processing 2 Pitch Shift=EAP2:ピッチ変更(Pitch Shift)
+Pitch=ピッチ
+Mix=ミックス
+[External Audio Processing 2 Auto Wah]
+External Audio Processing 2 Auto Wah=EAP2:オートワウ(Auto Wah)
+Sensitivity=感度
+Base Freq=基準周波数
+Range=範囲
+Resonance=レゾナンス
+Mix=ミックス
+[External Audio Processing 2 DeEsser]
+External Audio Processing 2 DeEsser=EAP2:ディエッサー(DeEsser)
+Frequency=周波数
+Threshold=しきい値
+Amount=強さ
+Width=帯域幅
+[External Audio Processing 2 Spectral Gate]
+External Audio Processing 2 Spectral Gate=EAP2:スペクトラルゲート(Spectral Gate)
+Threshold (dB)=しきい値(dB)
+Attack (ms)=アタック(ms)
+Release (ms)=リリース(ms)
+Mix=ミックス
