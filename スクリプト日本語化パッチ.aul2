@@ -679,7 +679,7 @@ disassembler.anm2=パーツ分割(disassembler.anm2)
 [transform_specific_chars.anm2]
 transform_specific_chars.anm2=特定文字変形(transform_specific_chars.anm2)
 [budoux.obj2]
-budoux.obj2=自然改行テキスト(budoux.obj2)
+budoux.obj2=自動改行テキスト(budoux.obj2)
 
 ; mes氏のスクリプト https://github.com/mes51
 [Unmult]
