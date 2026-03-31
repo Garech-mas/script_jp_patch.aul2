@@ -45,7 +45,7 @@ jobs:
             --title "スクリプト日本語化パッチ ${{ github.event.inputs.version }}" \
             --draft \
             --notes "---
-            以下のファイルのどちらかをダウンロードし、AviUtl2のプレビューにドラッグ&ドロップしてください。
+            以下のファイルのどちらかをダウンロードし、ZIPファイルをAviUtl2のプレビューにドラッグ&ドロップしてください。
           - \`スクリプト日本語化パッチ.au2pkg.zip\` (通常版)
           - \`日本語(アクセスキー付き)_スクリプト日本語化パッチ.au2pkg.zip\` ([アクセスキー付きリソース](https://github.com/Garech-mas/jp_akey.aul2)との共存版)
 
