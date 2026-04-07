@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.03.31
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.07
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
 ; ○他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -466,8 +466,8 @@ Gain=強さ
 GaussianBlur@Diffusion_K=ガウシアンぼかし@Diffusion_K(GaussianBlur)
 Blurriness=強さ
 Dimensions=方向
-Horizontal=横
-Vertical=縦
+Horizontal=横のみ
+Vertical=縦のみ
 Horizontal and Vertical=縦と横
 Resize=リサイズ
 [Orton@Diffusion_K]
@@ -479,6 +479,9 @@ Low=しきい値(下)
 High=しきい値(上)
 Softness=柔らかさ
 Invert=マスクの反転
+Brightness & Contrast=輝度・コントラスト
+Brightness=輝度
+Contrast=コントラスト
 Compositing=合成
 Blend Mode=合成モード
 Normal=通常
@@ -493,7 +496,53 @@ Screen=スクリーン
 Color Dodge=覆い焼き(カラー)
 Linear Dodge (Add)=覆い焼き(リニア)・加算
 Lighter Color=カラー比較(明)
+Alpha Mode=透過モード
+Alpha Blending=滑らかに透過 (Alpha Blending)
+Alpha Hashed=ディザ透過 (Alpha Hashed)
 Clamp=飽和する
+[ChannelBlur@Diffusion_K]
+ChannelBlur@Diffusion_K=ガウシアンぼかし(色個別)@Diffusion_K(ChannelBlur)
+Blurriness=強さ
+Red=赤
+Green=緑
+Blue=青
+Alpha=アルファ
+Dimensions=方向
+Horizontal=横のみ
+Vertical=縦のみ
+Horizontal and Vertical=縦と横
+Resize=リサイズ
+[Dissolve@Diffusion_K]
+Dissolve@Diffusion_K=ディザ合成@Diffusion_K(Dissolve)
+Mode=モード
+Dissolve=ディザ合成
+Dancing Dissolve=ダイナミックディザ合成
+[Scatter@Diffusion_K]
+Scatter@Diffusion_K=ピクセル拡散@Diffusion_K(Scatter)
+Amount=強さ
+Grain=方向
+Horizontal=横のみ
+Vertical=縦のみ
+Both=縦と横
+Seed=シード値
+Resize=リサイズ
+[Noise@Diffusion_K]
+Noise@Diffusion_K=ノイズ@Diffusion_K(Noise)
+Amount=強さ
+Color=ノイズの種類
+BW=モノクロ
+RGB=カラー
+RGBA=カラー+透明度
+Seed=シード値
+Clamp=飽和する
+[Noise(HSLA)@Diffusion_K]
+Noise(HSLA)@Diffusion_K=ノイズ(色相/彩度/輝度)@Diffusion_K(Noise(HSLA))
+Amount=強さ
+Hue=色相
+Saturation=彩度
+Lightness=輝度
+Alpha=アルファ
+Seed=シード値
 
 ; こんにゃくねこ氏のスクリプト https://github.com/CatWithNeko/aviutl2-scripts
 [3x3Filter]
