@@ -1,7 +1,7 @@
 ; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.07
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
-; ○他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
+; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
 ; ----------------------------------------------------------
 ; ※この言語ファイルの導入前に一度ご確認ください。
 ; 1. 本翻訳は可読性、AviUtl/AE互換性、用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
@@ -15,8 +15,8 @@
 ; 2. 誤訳報告や翻訳追加要望などがあれば、お気軽にご連絡ください！
 ; ----------------------------------------------------------
 ; 本ファイルは MIT License のもとで配布されます。
-; 再配布・改変する場合、本注意書きおよび免責事項を削除しないでください。
-; また、利用者がダウンロード前に本注意書きおよび免責事項を確認できるよう努めてください。
+; 再配布・改変する場合、README内の「利用する場合のお願い」「注意事項・免責事項」を保持してください。  
+; 二次配布や導入支援ツールへの登録を行う際は、利用者が事前に「利用する場合のお願い」を確認できるよう配慮いただけますと幸いです。
 ;
 
 ; azurite氏のスクリプト https://github.com/azurite581
@@ -309,7 +309,7 @@ Dark Alpha=暗部不透明度
 Color Space=色空間
 Mix=合成量
 [Threshold(RGBA)@Stylize_K]
-Threshold(RGBA)@Stylize_K=２値化(色個別)@Stylize_K(Threshold(RGBA))
+Threshold(RGBA)@Stylize_K=２値化(色別)@Stylize_K(Threshold(RGBA))
 R Threshold=Rしきい値
 G Threshold=Gしきい値
 B Threshold=Bしきい値
@@ -334,7 +334,7 @@ Sharp Colors=色くっきり
 Color Space=色空間
 Mix=合成量
 [Posterize(RGBA)@Stylize_K]
-Posterize(RGBA)@Stylize_K=ポスタリゼーション(色個別)@Stylize_K(Posterize(RGBA))
+Posterize(RGBA)@Stylize_K=ポスタリゼーション(色別)@Stylize_K(Posterize(RGBA))
 R Level=Rレベル
 G Level=Gレベル
 B Level=Bレベル
@@ -463,7 +463,7 @@ Difference=差分
 Unpremultiply@Stylize_K=黒色背景透過@Stylize_K(Unpremultiply)
 Gain=強さ
 [GaussianBlur@Diffusion_K]
-GaussianBlur@Diffusion_K=ガウシアンぼかし@Diffusion_K(GaussianBlur)
+GaussianBlur@Diffusion_K=ガウスぼかし@Diffusion_K(GaussianBlur)
 Blurriness=強さ
 Dimensions=方向
 Horizontal=横のみ
@@ -501,7 +501,7 @@ Alpha Blending=滑らかに透過 (Alpha Blending)
 Alpha Hashed=ディザ透過 (Alpha Hashed)
 Clamp=飽和する
 [ChannelBlur@Diffusion_K]
-ChannelBlur@Diffusion_K=ガウシアンぼかし(色個別)@Diffusion_K(ChannelBlur)
+ChannelBlur@Diffusion_K=ガウスぼかし(色別)@Diffusion_K(ChannelBlur)
 Blurriness=強さ
 Red=赤
 Green=緑
