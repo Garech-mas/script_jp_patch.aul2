@@ -2,7 +2,7 @@
 [project]
 id = "script_jp_patch"
 name = "スクリプト日本語化パッチ"
-version = "2026.03.31"
+version = "YYYY.MM.DD"
 
 # --- original ---
 [artifacts.original]

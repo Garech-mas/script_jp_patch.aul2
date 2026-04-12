@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.07
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.12
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
 ; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -474,16 +474,38 @@ Resize=リサイズ
 Orton@Diffusion_K=オートン効果@Diffusion_K(Orton)
 Intensity=強さ
 Blurriness=ぼかし強さ
+Exposure=露出
 Mask=マスク
+Invert=マスクの反転
+Luminance Mask=輝度マスク
 Low=しきい値(下)
 High=しきい値(上)
 Softness=柔らかさ
-Invert=マスクの反転
+Texture Mask=テクスチャマスク
+Source=ソース
+Image=画像
+Layer=レイヤー
 Brightness & Contrast=輝度・コントラスト
 Brightness=輝度
 Contrast=コントラスト
+Transform=変形
+Rotation=回転
+Scale=拡大率
+Chromatic Aberration=色収差
+Channels=チャンネル
+Red & Green=赤と緑
+Red & Blue=赤と青
+Green & Blue=緑と青
+Offset=オフセット
+LoCA=軸上色収差 (LoCA)
+Enable=有効化
+Red=赤
+Green=緑
+Blue=青
+LaCA=倍率色収差 (LaCA)
 Compositing=合成
 Blend Mode=合成モード
+Replace=置換
 Normal=通常
 Dissolve=ディザ合成
 Darken=比較(暗)
@@ -499,7 +521,13 @@ Lighter Color=カラー比較(明)
 Alpha Mode=透過モード
 Alpha Blending=滑らかに透過 (Alpha Blending)
 Alpha Hashed=ディザ透過 (Alpha Hashed)
+Gamma=ガンマ
 Clamp=飽和する
+Glow Only=光成分のみ
+Additional Options=追加設定
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
 [ChannelBlur@Diffusion_K]
 ChannelBlur@Diffusion_K=ガウスぼかし(色別)@Diffusion_K(ChannelBlur)
 Blurriness=強さ
