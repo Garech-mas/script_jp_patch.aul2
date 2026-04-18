@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.12
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.04.18
 ; ----------------------------------------------------------
 ; ※最重要（必ず守ってください！）
 ; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -96,7 +96,7 @@ Entry Scale=登場拡大率
 Entry Rand Flip=登場時に確率で反転
 Exit Scale=退場拡大率
 Exit Rand Flip=退場時に確率で反転
-Seed=シード値
+Seed=シード
 [ColorLUT_K]
 LUT File=LUTファイル
 Reload LUT=LUTファイルを再読み込み
@@ -107,7 +107,7 @@ Dissolve=ディザ合成
 Darken=比較(暗)
 Multiply=乗算
 Color Burn=焼き込み(カラー)
-Linear Burn=焼き込み(リニア)
+Linear Burn=陰影
 Darker Color=カラー比較(暗)
 Lighten=比較(明)
 Screen=スクリーン
@@ -117,7 +117,7 @@ Lighter Color=カラー比較(明)
 Overlay=オーバーレイ
 Soft Light=ソフトライト
 Hard Light=ハードライト
-Linear Light=リニアライト
+Linear Light=明暗
 Vivid Light=ビビッドライト
 Pin Light=ピンライト
 Hard Mix=ハードミックス
@@ -127,10 +127,10 @@ Subtract=減算
 Divide=除算
 Hue=色相
 Saturation=彩度
-Color=カラー
+Color=色差
 Luminosity=輝度
 Opacity=不透明度
-Clamp=クランプ
+Clamp=飽和する
 [Constraint]
 Constraint=くっつけ配置(Constraint)
 Image=ファイル
@@ -368,7 +368,7 @@ Mix=合成量
 Shuffle Glyphs=文字シャッフル
 Excluded Glyphs=除外文字
 Interval=間隔
-Seed=シード値
+Seed=シード
 Solid=単色
 Original=元画像
 Mosaic=モザイク
@@ -470,25 +470,31 @@ Horizontal=横のみ
 Vertical=縦のみ
 Horizontal and Vertical=縦と横
 Resize=リサイズ
+Additional Options=追加設定
 [Orton@Diffusion_K]
 Orton@Diffusion_K=オートン効果@Diffusion_K(Orton)
 Intensity=強さ
 Blurriness=ぼかし強さ
 Exposure=露出
 Mask=マスク
-Invert=マスクの反転
 Luminance Mask=輝度マスク
 Low=しきい値(下)
 High=しきい値(上)
 Softness=柔らかさ
 Texture Mask=テクスチャマスク
-Source=ソース
+Source=使用ソース
 Image=画像
 Layer=レイヤー
+Channel=チャンネル
+Luminance=輝度
+Alpha=アルファ
+Mask Options=マスクの設定
+Invert=マスクの反転
 Brightness & Contrast=輝度・コントラスト
 Brightness=輝度
 Contrast=コントラスト
 Transform=変形
+Anisotropy=ぼかし変形
 Rotation=回転
 Scale=拡大率
 Chromatic Aberration=色収差
@@ -511,7 +517,7 @@ Dissolve=ディザ合成
 Darken=比較(暗)
 Multiply=乗算
 Color Burn=焼き込み(カラー)
-Linear Burn=焼き込み(リニア)
+Linear Burn=陰影
 Darker Color=カラー比較(暗)
 Lighten=比較(明)
 Screen=スクリーン
@@ -540,11 +546,13 @@ Horizontal=横のみ
 Vertical=縦のみ
 Horizontal and Vertical=縦と横
 Resize=リサイズ
+Additional Options=追加設定
 [Dissolve@Diffusion_K]
 Dissolve@Diffusion_K=ディザ合成@Diffusion_K(Dissolve)
 Mode=モード
 Dissolve=ディザ合成
 Dancing Dissolve=ダイナミックディザ合成
+Additional Options=追加設定
 [Scatter@Diffusion_K]
 Scatter@Diffusion_K=ピクセル拡散@Diffusion_K(Scatter)
 Amount=強さ
@@ -552,8 +560,9 @@ Grain=方向
 Horizontal=横のみ
 Vertical=縦のみ
 Both=縦と横
-Seed=シード値
+Seed=シード
 Resize=リサイズ
+Additional Options=追加設定
 [Noise@Diffusion_K]
 Noise@Diffusion_K=ノイズ@Diffusion_K(Noise)
 Amount=強さ
@@ -561,8 +570,9 @@ Color=ノイズの種類
 BW=モノクロ
 RGB=カラー
 RGBA=カラー+透明度
-Seed=シード値
+Seed=シード
 Clamp=飽和する
+Additional Options=追加設定
 [Noise(HSLA)@Diffusion_K]
 Noise(HSLA)@Diffusion_K=ノイズ(色相/彩度/輝度)@Diffusion_K(Noise(HSLA))
 Amount=強さ
@@ -570,7 +580,8 @@ Hue=色相
 Saturation=彩度
 Lightness=輝度
 Alpha=アルファ
-Seed=シード値
+Seed=シード
+Additional Options=追加設定
 
 ; こんにゃくねこ氏のスクリプト https://github.com/CatWithNeko/aviutl2-scripts
 [3x3Filter]
@@ -653,7 +664,7 @@ Reverse=反転
 Dither=ザラザラ二値化(Dither)
 threshold=しきい値
 strength=強さ
-seed=シード値
+seed=シード
 size=サイズ
 Color1=色1
 Color2=色2
@@ -700,10 +711,10 @@ Alpha=不透明度
 Start=開始色
 Grad=グラデーション
 End=終了色
-Transparent=透過
+Transparent=先端を透過
 ShadowOnly=影のみ
-FixRotate=回転補正
-Flat=双方向
+FixRotate=影の角度を固定
+Flat=フラット化
 [MaxMin]
 MaxMin=最大最小(MaxMin)
 Max/Min=最大/最小
@@ -733,7 +744,7 @@ Turbulent=タービュレント(Turbulent)
 Amount=歪み量
 Scale=拡大率
 Speed=変化速度
-Seed=シード値
+Seed=シード
 Blur=ぼかし
 Expansion=領域拡張
 [Wave Warp]
@@ -749,6 +760,13 @@ sin=正弦波
 saw=ノコギリ波
 tri=三角波
 square=矩形波
+[Tonecurve_C]
+Tonecurve_C=トーンカーブ(時間制御)(Tonecurve_C)
+[Mosaic_C]
+Mosaic_C=モザイクC(Mosaic_C)
+Size=サイズ
+sizeX=横サイズ
+sizeY=縦サイズ
 
 ; 名無し｡氏のスクリプト https://github.com/sevenc-nanashi
 [disassembler.anm2]
@@ -988,3 +1006,25 @@ Threshold (dB)=しきい値(dB)
 Attack (ms)=アタック(ms)
 Release (ms)=リリース(ms)
 Mix=ミックス
+
+; namacream氏のスクリプト https://x.com/namacream_/status/1945511815250940401
+[Datamosh]
+Datamosh=データモッシュ(Datamosh)
+Motion Str=変形の強さ
+Scale X=Xスケール
+Scale Y=Yスケール
+Seed Layer=元画像レイヤー
+Map Layer=動きレイヤー
+Freeze(Melting)=変形を止める
+Map is Vector=動きレイヤーをベクトルとして扱う
+Output Flow=動きの可視化
+[MiterOutline]
+MiterOutline=角立ち縁取り(MiterOutline)
+[MiterText]
+MiterText=角立ちテキスト(MiterText)
+
+; 🈂️行氏のスクリプト https://github.com/SagyouDarui900
+[GB_Style]
+GB_Style=ゲームボーイ風(GB_Style)
+[OpticsCompensation_s]
+OpticsCompensation_s=レンズ補正(OpticsCompensation_s)
