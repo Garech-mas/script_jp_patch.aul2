@@ -1146,7 +1146,7 @@ General Settings=全体設定
 Wet=Wet
 ; ↑Dry/Wetに関しては英語ママの方が視認性/認知度が高いため、英語残し
 Gain=ゲイン
-Apply All section=全体に適用
+Apply All section (Deprecated)=全体に適用(廃止予定)
 Apply to L=左チャンネルに適用
 Apply to R=右チャンネルに適用
 Apply Each section=セクション毎に適用
@@ -1172,7 +1172,7 @@ Show Param List=パラメータ
 External Audio Processing 2 Utility=EAP2:補助設定(Utility)
 Gain=ゲイン
 Pan(L-R)=パン(L-R)
-All section=オブジェクト全体
+All section (Deprecated)=オブジェクト全体(廃止予定)
 Swap(L/R)=左右チャンネル入れ替え
 Invert L=左チャンネルの位相を反転
 Invert R=右チャンネルの位相を反転
@@ -1227,7 +1227,7 @@ Delay Mix=ディレイ割合
 Pseudo Width=疑似ステレオ化
 [External Audio Processing 2 Modulation]
 External Audio Processing 2 Modulation=EAP2:モジュレーション(Modulation)
-All section=オブジェクト全体
+All section (Deprecated)=オブジェクト全体(廃止予定)
 Chorus=コーラス
 Flanger=フランジャー
 Tremolo=トレモロ
@@ -1242,7 +1242,7 @@ Delay=ディレイ時間
 Mix=ミックス
 [External Audio Processing 2 Distortion]
 External Audio Processing 2 Distortion=EAP2:ディストーション(Distortion)
-All section=オブジェクト全体
+All section (Deprecated)=オブジェクト全体(廃止予定)
 Overdrive=オーバードライブ
 Fuzz=ファズ
 Bitcrush=ビットクラッシュ
