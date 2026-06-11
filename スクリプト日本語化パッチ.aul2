@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.05.29
+; スクリプト日本語化パッチ.aul2 / Copyright (c) 2026 Garech / 最終確認: 2026.06.11
 ; ----------------------------------------------------------
 ; 【重要】利用する場合のお願い
 ; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -594,6 +594,13 @@ Overwrite=上書き
 [Blink@FlowType_K]
 Blink@FlowType_K=点滅@FlowType_K(Blink)
 Blink=点滅
+Based On=単位
+Whole=全体
+Objects=オブジェクトごと
+Characters=文字
+Characters Excluding Spaces=文字(空白除く)
+Words=単語ごと
+Lines=行ごと
 Duration=点滅周期
 Steps=明暗の段階数
 Opacity=不透明度
@@ -603,6 +610,7 @@ Scale=拡大率
 Edge Detection=エッジ抽出
 Intensity=強さ
 Threshold=しきい値
+Pool=使用文字
 Color=色調
 Source=使用ソース
 Image=画像
@@ -696,6 +704,7 @@ Metrics=自動(メトリクス)
 Filter=対象
 Regex Pattern=正規表現
 Capture Group=抽出対象
+Limit Effects Below=後続フィルタを抽出文字のみに制限
 Transform=変形
 Pivot Point=中心座標
 X=X
@@ -742,13 +751,13 @@ Timing=タイミング
 Automatic=自動
 Manual=手動(中間点ごと)
 Duration=時間
-;Duration=登退場時間
+Offset=ズレ
 Motion=動作
 Based On=単位
 Whole=全体
 Objects=オブジェクトごと
-Characters=文字ごと
-Characters Excluding Spaces=文字ごと(空白除く)
+Characters=文字
+Characters Excluding Spaces=文字(空白除く)
 Words=単語ごと
 Lines=行ごと
 Order=順序
@@ -809,6 +818,7 @@ Maximum=最大値
 Edge Detection=エッジ抽出
 Intensity=強さ
 Threshold=しきい値
+Pool=使用文字
 Tint=色調
 Source=使用ソース
 Image=画像
@@ -871,6 +881,29 @@ Left=左余白
 Right=右余白
 Top=上余白
 Bottom=下余白
+[Repeat@FlowType_K]
+Repeat@FlowType_K=リピート配置@FlowType_K(Repeat)
+Layout=レイアウト
+Count=個数
+Padding=間隔
+Position Offset=位置オフセット
+Angle=ズレ量
+Axis=ズレ軸方向
+Time Offset=時間オフセット
+Interval=間隔
+Orientation=向き
+Column=列順 (横方向)
+Row=行順 (縦方向)
+Order=適用順序
+Forward=順方向
+Reverse=逆方向
+Random=ランダム
+Additional Options=追加設定
+Unit=時間単位
+Frames=フレーム
+Seconds=秒
+Seed=シード
+Highlight Order=順番を表示
 
 ; こんにゃくねこ氏のスクリプト https://github.com/CatWithNeko/aviutl2-scripts
 [3x3Filter]
@@ -1022,9 +1055,9 @@ Rel R=R影響
 Rel G=G影響
 Rel B=B影響
 Mode=モード
-Luminance (BT.601)=輝度（BT.601）
-Luminance (BT.709)=輝度（BT.709）
-Luminance (BT.2020)=輝度（BT.2020）
+Luminance (BT.601)=輝度 (BT.601)
+Luminance (BT.709)=輝度 (BT.709)
+Luminance (BT.2020)=輝度 (BT.2020)
 Mean=平均
 Invert=反転
 Bidirectional=双方向
@@ -1088,7 +1121,7 @@ SmoothNoise=スムースノイズ(SmoothNoise)
 [TrueNoise]
 TrueNoise=本当のノイズ(TrueNoise)
 
-; Book-0225氏のスクリプト https://github.com/Book-0225
+; Book-0225氏のスクリプト(フィルタプラグイン) https://github.com/Book-0225
 [External Audio Processing 2 (Media)]
 External Audio Processing 2 (Media)=EAP2:メディアオブジェクト(Media)
 General Settings=全体設定
@@ -1388,3 +1421,224 @@ OpticsCompensation_s=レンズ補正(OpticsCompensation_s)
 ; めかど氏のスクリプト https://note.com/mekado
 [RadialSpike]
 RadialSpike=放射とげとげ変形(RadialSpike)
+
+; ced氏のスクリプト(フィルタプラグイン) https://c30.booth.pm
+[MIDI Info Object]
+MIDI Info Object=MIDI情報オブジェクト(MIDI Info Object)
+MIDI File=MIDIファイル
+Width=横幅
+Height=高さ
+Font Size=文字サイズ
+Font=使用フォント
+Custom Font=任意フォント名
+Choose Font=フォント選択ダイアログを開く
+Color=文字色
+Auto Padding=自動でゼロ埋め
+Zero Padding=ゼロ埋め桁数
+Use Commas=カンマ区切り
+Template=表示内容のテンプレート
+[MIDI Source ]
+MIDI Source =MIDI共有ソース(MIDI Source)
+MIDI File=MIDIファイル
+Color Mode=色指定モード
+Channel=チャンネル別
+Track=トラック別
+Channel + Track=チャンネルとトラック
+Ch 1 Color=Ch 1の色
+Ch 2 Color=Ch 2の色
+Ch 3 Color=Ch 3の色
+Ch 4 Color=Ch 4の色
+Ch 5 Color=Ch 5の色
+Ch 6 Color=Ch 6の色
+Ch 7 Color=Ch 7の色
+Ch 8 Color=Ch 8の色
+Ch 9 Color=Ch 9の色
+Ch 10 Color=Ch 10の色
+Ch 11 Color=Ch 11の色
+Ch 12 Color=Ch 12の色
+Ch 13 Color=Ch 13の色
+Ch 14 Color=Ch 14の色
+Ch 15 Color=Ch 15の色
+Ch 16 Color=Ch 16の色
+[MIDI Text ]
+MIDI Text =MIDI情報テキスト(MIDI Text)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Width=横幅
+Height=高さ
+Font Size=文字サイズ
+Font=使用フォント
+Custom Font=任意フォント名
+Choose Font...=フォント選択ダイアログを開く...
+Align=文字揃え
+Left=左寄せ
+Center=中央揃え
+Right=右寄せ
+Color=文字色
+Auto Padding=自動でゼロ埋め
+Zero Padding=ゼロ埋め桁数
+Use Commas=カンマ区切り
+Template=表示内容のテンプレート
+[MIDI Graph ]
+MIDI Graph =MIDIグラフ(MIDI Graph)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Graph Type=表示タイプ
+NPS Graph=１秒あたりのノート数
+Polyphony Graph=同時発音数
+BPM Graph=テンポの推移
+Notes Graph=累積ノート数
+Notes Density Graph=ノート密度
+Graph Scope=範囲
+Full=全体
+Window=表示時間
+Y Range=縦幅
+Visible=表示部分に追従
+Graph Seconds=表示時間(秒)
+Graph Thickness=線の太さ
+Width=横幅
+Height=高さ
+Color=グラフ色
+[MIDI Text Scroll ]
+MIDI Text Scroll =MIDIテキストスクロール(MIDI Text Scroll)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Event Source=表示イベント
+Marker=マーカー
+Lyric=歌詞
+Text=コメント(Text)
+All=すべて
+Align=文字揃え
+Left=左寄せ
+Center=中央揃え
+Right=右寄せ
+Direction=スクロール方向
+Down=上から下
+Up=下から上
+Time Mode=時間単位
+Time (sec)=秒
+Beat (musical)=拍
+Window Seconds=表示時間
+Playhead %=現在位置高さ
+Width=横幅
+Height=高さ
+Font Size=文字サイズ
+Font=使用フォント
+Choose Font...=フォント選択ダイアログを開く...
+Color=文字色
+Highlight Current=現在位置ライン以降を強調
+Highlight Color=強調色
+Show Playhead Line=現在位置ラインを表示
+[MIDI Keyboard ]
+MIDI Keyboard =MIDIキーボード(MIDI Keyboard)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Layout=レイアウト
+Single=単一鍵盤
+16 Channels=16チャンネル鍵盤
+Orientation=向き
+Horizontal=横
+Vertical=縦
+Style=スタイル
+Piano=ピアノ
+Flat=フラット
+Low Key=最低鍵番号
+High Key=最高鍵番号
+Width=横幅
+Height=高さ
+[MIDI Piano Roll ]
+MIDI Piano Roll =MIDIピアノロール(CPU) (MIDI Piano Roll)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Direction=スクロール方向
+Vertical (Down)=上から下
+Horizontal (R to L)=右から左
+Time Mode=時間単位
+Time (sec)=秒
+Beat (musical)=拍
+Low Key=最低鍵番号
+High Key=最高鍵番号
+Roll Window=表示時間
+Playhead %=現在位置高さ
+Note Border=ノートの枠線
+Width=幅
+Height=高さ
+[MIDI Piano Roll GPU ]
+MIDI Piano Roll GPU =MIDIピアノロール(GPU) (MIDI Piano Roll GPU)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Direction=スクロール方向
+Vertical (Down)=上から下
+Horizontal (R to L)=右から左
+Time Mode=時間単位
+Time (sec)=秒
+Beat (musical)=拍
+Low Key=最低鍵番号
+High Key=最高鍵番号
+Roll Window=表示時間
+Playhead %=現在位置高さ
+Note Border=ノートの枠線
+Width=幅
+Height=高さ
+[MIDI Piano Roll 3D ]
+MIDI Piano Roll 3D =MIDIピアノロール3D (MIDI Piano Roll 3D)
+Source Mode=取得モード
+Local File=ファイル指定
+Shared=共有ソース
+MIDI File=MIDIファイル
+Time Mode=時間単位
+Time (sec)=秒
+Beat (musical)=拍
+Low Key=最低鍵番号
+High Key=最高鍵番号
+Roll Window=表示時間
+Width=幅
+Height=高さ
+
+; 甘井ふたば氏のスクリプト https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad
+[AudioSpectrum_01@DTMer Starter Kit]
+AudioSpectrum_01@DTMer Starter Kit=音声波形01@DTMer Starter Kit(AudioSpectrum_01)
+[AudioSpectrum_02@DTMer Starter Kit]
+AudioSpectrum_02@DTMer Starter Kit=音声波形02@DTMer Starter Kit(AudioSpectrum_02)
+[AudioSpectrum_03@DTMer Starter Kit]
+AudioSpectrum_03@DTMer Starter Kit=音声波形03@DTMer Starter Kit(AudioSpectrum_03)
+[AudioSpectrum_04@DTMer Starter Kit]
+AudioSpectrum_04@DTMer Starter Kit=音声波形04@DTMer Starter Kit(AudioSpectrum_04)
+[AudioSpectrum_05@DTMer Starter Kit]
+AudioSpectrum_05@DTMer Starter Kit=音声波形05@DTMer Starter Kit(AudioSpectrum_05)
+[BitterDance@DTMer Starter Kit]
+BitterDance@DTMer Starter Kit=ビターダンス@DTMer Starter Kit(BitterDance)
+[BPM_Sync@DTMer Starter Kit]
+BPM_Sync@DTMer Starter Kit=BPM同期@DTMer Starter Kit(BPM_Sync)
+[MIDI_ChordDetection@DTMer Starter Kit]
+MIDI_ChordDetection@DTMer Starter Kit=MIDIコード検出@DTMer Starter Kit(MIDI_ChordDetection)
+[MIDI_ChordTone@DTMer Starter Kit]
+MIDI_ChordTone@DTMer Starter Kit=MIDIコード構成音表示@DTMer Starter Kit(MIDI_ChordTone)
+[MIDI_Visualizer@DTMer Starter Kit]
+MIDI_Visualizer@DTMer Starter Kit=MIDI表示@DTMer Starter Kit(MIDI_Visualizer)
+[PlayBar@DTMer Starter Kit]
+PlayBar@DTMer Starter Kit=再生バー@DTMer Starter Kit(PlayBar)
+[PlayTime@DTMer Starter Kit]
+PlayTime@DTMer Starter Kit=再生時間表示@DTMer Starter Kit(PlayTime)
+[SoundSync_Cumulative@DTMer Starter Kit]
+SoundSync_Cumulative@DTMer Starter Kit=音声同期(累積)@DTMer Starter Kit(SoundSync_Cumulative)
+[SoundSync_Live@DTMer Starter Kit]
+SoundSync_Live@DTMer Starter Kit=音声同期(動的)@DTMer Starter Kit(SoundSync_Live)
+[StereoImager@DTMer Starter Kit]
+StereoImager@DTMer Starter Kit=ステレオイメージャー@DTMer Starter Kit(StereoImager)
+[TimeSignature@DTMer Starter Kit]
+TimeSignature@DTMer Starter Kit=拍子表示@DTMer Starter Kit(TimeSignature)
+[VolumeMeter@DTMer Starter Kit]
+VolumeMeter@DTMer Starter Kit=音量メーター@DTMer Starter Kit(VolumeMeter)

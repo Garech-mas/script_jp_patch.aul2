@@ -135,8 +135,40 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | 🈂️行 | [GB_Style](https://github.com/SagyouDarui900/AviUtl2-Script-GB_Style) | ゲームボーイ風 |
 | 🈂️行(移植) | [OpticsCompensation_s](https://github.com/SagyouDarui900/OpticsCompensation_s_for_AviUtl2) | レンズ補正 |
 | めかど | [RadialSpike](https://note.com/mekado/n/n6eb31fcc498b) | 放射とげとげ変形 |
+| ced | [MIDI Info Object](https://c30.booth.pm/items/8420669)    | MIDI情報オブジェクト    |
+| ced | [MIDI Source](https://c30.booth.pm/items/8420669)         | MIDI共有ソース       |
+| ced | [MIDI Text](https://c30.booth.pm/items/8420669)           | MIDI情報テキスト      |
+| ced | [MIDI Graph](https://c30.booth.pm/items/8420669)          | MIDIグラフ         |
+| ced | [MIDI Text Scroll](https://c30.booth.pm/items/8420669)    | MIDIテキストスクロール   |
+| ced | [MIDI Keyboard](https://c30.booth.pm/items/8420669)       | MIDIキーボード       |
+| ced | [MIDI Piano Roll](https://c30.booth.pm/items/8420669)     | MIDIピアノロール(CPU) |
+| ced | [MIDI Piano Roll GPU](https://c30.booth.pm/items/8420669) | MIDIピアノロール(GPU) |
+| ced | [MIDI Piano Roll 3D](https://c30.booth.pm/items/8420669)  | MIDIピアノロール3D    |
+| 甘井ふたば | [AudioSpectrum_01@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)     | 音声波形01@DTMer Starter Kit       |
+| 甘井ふたば | [AudioSpectrum_02@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)     | 音声波形02@DTMer Starter Kit       |
+| 甘井ふたば | [AudioSpectrum_03@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)     | 音声波形03@DTMer Starter Kit       |
+| 甘井ふたば | [AudioSpectrum_04@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)     | 音声波形04@DTMer Starter Kit       |
+| 甘井ふたば | [AudioSpectrum_05@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)     | 音声波形05@DTMer Starter Kit       |
+| 甘井ふたば | [BitterDance@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)          | ビターダンス@DTMer Starter Kit       |
+| 甘井ふたば | [BPM_Sync@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)             | BPM同期@DTMer Starter Kit        |
+| 甘井ふたば | [MIDI_ChordDetection@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)  | MIDIコード検出@DTMer Starter Kit    |
+| 甘井ふたば | [MIDI_ChordTone@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)       | MIDIコード構成音表示@DTMer Starter Kit |
+| 甘井ふたば | [MIDI_Visualizer@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)      | MIDI表示@DTMer Starter Kit       |
+| 甘井ふたば | [PlayBar@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)              | 再生バー@DTMer Starter Kit         |
+| 甘井ふたば | [PlayTime@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)             | 再生時間表示@DTMer Starter Kit       |
+| 甘井ふたば | [SoundSync_Cumulative@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad) | 音声同期(累積)@DTMer Starter Kit     |
+| 甘井ふたば | [SoundSync_Live@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)       | 音声同期(動的)@DTMer Starter Kit     |
+| 甘井ふたば | [StereoImager@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)         | ステレオイメージャー@DTMer Starter Kit   |
+| 甘井ふたば | [TimeSignature@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)        | 拍子表示@DTMer Starter Kit         |
+| 甘井ふたば | [VolumeMeter@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)          | 音量メーター@DTMer Starter Kit       |
 
 ## 更新履歴
+`2026.06.11`
+- MIDI Info Objectの翻訳を追加 (ced氏のフィルタプラグイン)
+- DTMer Starter Kitの翻訳を追加 (甘井ふたば氏のスクリプト)
+- FlowType_K v0.3.1に対応
+- External Audio Processing 2 v0.0.31 に対応
+
 `2026.05.29`
 - FlowType_K v0.2.0に対応
 - External Audio Processing 2 v0.0.30 に対応
