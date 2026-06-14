@@ -12,22 +12,8 @@ destination = "Language/スクリプト日本語化パッチ.aul2"
 [artifacts.original.profiles.release]
 enabled = true
 
-[artifacts.original.profiles.akey_zip]
-enabled = true
-
-# --- jp_akey (アクセスキー付き) ---
-[artifacts.jp_akey]
-source = "スクリプト日本語化パッチ.aul2"
-destination = "Language/日本語(アクセスキー付き).スクリプト日本語化パッチ.aul2"
-
-[artifacts.jp_akey.profiles.release]
-enabled = false
-
-[artifacts.jp_akey.profiles.akey_zip]
-enabled = true
-
 [release]
 output_dir = "release"
 package_template = "package.txt"
-package_information = "{name} {version}"
+package_information = "{name} {version} by Garech"
 zip_name="{id}"
