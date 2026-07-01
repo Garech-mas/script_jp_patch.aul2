@@ -20,7 +20,7 @@
 ;
 
 [Language]
-Information=スクリプト日本語化パッチ 2026.06.14 by Garech
+Information=スクリプト日本語化パッチ 2026.07.02 by Garech
 ; アクセスキー付き日本語リソース(弊作) が導入されている場合、自動的に適用されます
 ; https://github.com/Garech-mas/jp_akey.aul2
 SubLanguage=日本語(アクセスキー付き)
