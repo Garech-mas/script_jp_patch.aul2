@@ -20,7 +20,7 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 
 ## 注意事項・免責事項
 - 本ファイルはスクリプトの表示内容を変更するのみであり、元のスクリプトの挙動には影響しません。
-- 本翻訳は可読性→AviUtl/AE互換性→用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
+- 本翻訳は可読性→AviUtl/AE/Blender互換性→用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
 - 各スクリプトの更新により、一部項目が未翻訳となる場合があります。
 - 各スクリプトのバグを報告する際は、本ファイルを外して確認してください。
 - 本ファイルの使用により生じた問題について、責任は負いかねます。
@@ -50,9 +50,10 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | azurite | [MultiGradient@GradientEditor](https://github.com/azurite581/AviUtl2-GradientEditor) | 多色グラデーション@GradientEditor |
 | azurite | [Hex-Tiling](https://github.com/azurite581/AviUtl2-Hex-Tiling) | 六角形タイル |
 | σ軸 | [AutoClipping_S](https://github.com/sigma-axis/aviutl2_script_AutoClipping_S) | ぴったりクリッピングσ |
-| σ軸 | [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S) | ふち色縁取りσ |
+| σ軸 | [ColoredCollar_S](https://github.com/sigma-axis/aviutl2_script_ColoredCollar_S) | 色付き縁取りσ |
 | σ軸 | [Histogram_S](https://github.com/sigma-axis/aviutl2_script_Histogram_S) | ヒストグラムσ |
 | σ軸 | [GroundShadow2_S](https://github.com/sigma-axis/aviutl2_script_GroundShadow2_S) | 影落とし2σ |
+| σ軸 | [PageRoll_S](https://github.com/sigma-axis/aviutl2_script_PageRoll_S) | ページ丸めσ |
 | σ軸 | [PixelSnap_S](https://github.com/sigma-axis/aviutl2_script_PixelSnap_S) | ピクセル揃えσ |
 | σ軸 | [RadRotDirBlur_S](https://github.com/sigma-axis/aviutl2_script_RadRotDirBlur_S) | 放射回転方向ブラーσ |
 | かろてら | [色覚シミュレーションKR](https://github.com/karoterra/aviutl2-ColorVisionSimulation) | 色覚シミュレーションKR(パラメータのみ和訳) |
@@ -62,12 +63,16 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | KORAREI | [FlexUI](https://scrapbox.io/korarei/FlexUI) | 汎用トラックバー |
 | KORAREI | [Kaleidoscope_K](https://github.com/korarei/AviUtl2_Kaleidoscope_K_Script) | 万華鏡K |
 | KORAREI | [HaldCLUT_K](https://github.com/korarei/AviUtl2_ColorLUT_K_Plugin) | HaldCLUT_K(パラメータのみ和訳) |
+| KORAREI | [NeutralLUT_K](https://github.com/korarei/AviUtl2_ColorLUT_K_Plugin) | NeutralLUT_K(パラメータのみ和訳) |
 | KORAREI | [PixelSorter_K](https://github.com/korarei/AviUtl2_PixelSorter_K_Script) | ピクセルソートK |
 | KORAREI | [ObjectMotionBlur_LK](https://github.com/korarei/AviUtl2_ObjectMotionBlur_LK_Script) | モーションブラーLK |
 | KORAREI | [Transform](https://scrapbox.io/korarei/Transform) | トランスフォーム |
-| KORAREI | [Transform@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | トランスフォーム@CameraTransform_K |
+| KORAREI | [Empty@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | エンプティ@CameraTransform_K |
+| KORAREI | [Lens@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | レンズ@CameraTransform_K |
 | KORAREI | [Parent@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | 親@CameraTransform_K |
+| KORAREI | [Relations@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | トランスフォームコピー@CameraTransform_K |
 | KORAREI | [Track@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | トラック@CameraTransform_K |
+| KORAREI | [Transform@CameraTransform_K](https://github.com/korarei/AviUtl2_CameraTransform_K_Script) | トランスフォーム@CameraTransform_K |
 | KORAREI | [Saturate@Stylize_K](https://github.com/korarei/AviUtl2_Stylize_K_Script) | サチュレート@Stylize_K |
 | KORAREI | [Mosaic@Stylize_K](https://github.com/korarei/AviUtl2_Stylize_K_Script) | モザイク@Stylize_K |
 | KORAREI | [Threshold@Stylize_K](https://github.com/korarei/AviUtl2_Stylize_K_Script) | ２値化@Stylize_K |
@@ -131,7 +136,10 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | namacream | [MiterText](https://x.com/namacream_/status/1945511815250940401) | 角立ちテキスト |
 | namacream | [TV Simulator](https://x.com/namacream_/status/1945511815250940401) | レトロテレビ風 |
 | 🈂️行 | [GB_Style](https://github.com/SagyouDarui900/AviUtl2-Script-GB_Style) | ゲームボーイ風 |
+| 🈂️行 | [gliter](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | キラキラ化 |
+| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | グロー_sd |
 | 🈂️行(移植) | [OpticsCompensation_s](https://github.com/SagyouDarui900/OpticsCompensation_s_for_AviUtl2) | レンズ補正 |
+| 🈂️行 | [Quantize](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 低画質化 |
 | めかど | [RadialSpike](https://note.com/mekado/n/n6eb31fcc498b) | 放射とげとげ変形 |
 | ced | [MIDI Info Object](https://c30.booth.pm/items/8420669)    | MIDI情報オブジェクト    |
 | ced | [MIDI Source](https://c30.booth.pm/items/8420669)         | MIDI共有ソース       |
@@ -161,6 +169,14 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | 甘井ふたば | [VolumeMeter@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)          | 音量メーター@DTMer Starter Kit       |
 
 ## 更新履歴
+`2026.07.02`
+- PageRoll_S の和名を追加 (σ軸氏のスクリプト)
+- ColoredCollar_S の和名を変更 (ふち色縁取りσ→色付き縁取りσ)
+- CameraTransform_K v2.0.0に対応
+- FlowType_K v0.3.2に対応
+- KORAREI氏スクリプトの一部翻訳をBlenderに寄せるよう変更
+- gliter、glow_sd、Quantize の和名を追加 (🈂️行氏のスクリプト)
+
 `2026.06.14`
 - beta50の新しい言語ファイル仕様に対応
 - アクセスキー付き日本語リソースの共存版を削除し、  

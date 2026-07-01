@@ -1,10 +1,10 @@
-; スクリプト日本語化パッチ / Copyright (c) 2026 Garech / 最終確認: 2026.06.14
+; スクリプト日本語化パッチ / Copyright (c) 2026 Garech / 最終確認: 2026.07.02
 ; ----------------------------------------------------------
 ; 【重要】利用する場合のお願い
 ; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
 ; ----------------------------------------------------------
 ; ※この言語ファイルの導入前に一度ご確認ください。
-; 1. 本翻訳は可読性、AviUtl/AE互換性、用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
+; 1. 本翻訳は可読性、AviUtl/AE/Blender互換性、用途の明瞭さの順に優先しているため、原文と意味が完全に一致しない場合があります。
 ; 2. 各スクリプトの更新により、一部項目が未翻訳となる場合があります。
 ; 3. 各スクリプトのバグを報告する際は、本ファイルを外して確認してください。
 ; 4. 本ファイルの使用により生じた問題について、責任は負いかねます。
@@ -62,11 +62,15 @@ Hex-Tiling=六角形タイル(Hex-Tiling)
 [AutoClipping_S]
 AutoClipping_S=ぴったりクリッピングσ(AutoClipping_S)
 [ColoredCollar_S]
-ColoredCollar_S=ふち色縁取りσ(ColoredCollar_S)
+ColoredCollar_S=色付き縁取りσ(ColoredCollar_S)
 [Histogram_S]
 Histogram_S=ヒストグラムσ(Histogram_S)
 [GroundShadow2_S]
 GroundShadow2_S=影落とし2σ(GroundShadow2_S)
+[PageRoll_S]
+PageRoll_S=ページ丸めσ(PageRoll_S)
+[PageRoll_S(シーンチェンジ)]
+PageRoll_S(シーンチェンジ)=ページ丸めσ(シーンチェンジ)(PageRoll_S)
 [PixelSnap_S]
 PixelSnap_S=ピクセル揃えσ(PixelSnap_S)
 [RadRotDirBlur_S]
@@ -155,6 +159,36 @@ Padding=余白
 Transform=変形
 Rotation=回転
 Scale=拡大率
+[Empty@CameraTransform_K]
+Empty@CameraTransform_K=エンプティ@CameraTransform_K(Empty)
+Position=位置
+Rotation=回転
+W Rotation=W回転
+X Rotation=X回転
+Y Rotation=Y回転
+Z Rotation=Z回転
+Rotation Mode=回転モード
+Mode=回転モード
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
+XYZ Euler=XYZオイラー角
+XZY Euler=XZYオイラー角
+YXZ Euler=YXZオイラー角
+YZX Euler=YZXオイラー角
+ZXY Euler=ZXYオイラー角
+ZYX Euler=ZYXオイラー角
+Scale=スケール
+Relations=親子関係
+Parent Layer=親レイヤー
+Visibility=表示の設定
+Show In=描画対象
+Viewports=プレビュー画面
+Renders=出力画面
+Additional Options=追加設定
+Influence=影響度
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
 [FlexUI]
 FlexUI=汎用トラックバー(FlexUI)
 Table Name=テーブル名
@@ -180,6 +214,30 @@ Tiler=タイル (Tiler)
 [HaldCLUT_K]
 Level=レベル
 Resize Scene to LUT=シーンサイズをLUTに合わせる
+[Lens@CameraTransform_K]
+Lens@CameraTransform_K=レンズ@CameraTransform_K(Lens)
+Focal Length=焦点距離
+Dolly Zoom=ドリーズーム
+Sensor=センサー
+Fit=フィット
+Auto=自動
+Horizontal=水平
+Vertical=垂直
+Size=サイズ
+Depth of Field=被写界深度
+Focus Distance=撮影距離
+Aperture=絞り
+F-Stop=F値
+[NeutralLUT_K]
+LUT Format=LUT形式
+Hald Settings=Hald CLUTの設定
+Level=レベル
+Strip Settings=Strip LUTの設定
+Size=サイズ
+Visibility=表示の設定
+Show In=描画対象
+Viewports=プレビュー画面
+Renders=出力画面
 [PixelSorter_K]
 PixelSorter_K=ピクセルソートK(PixelSorter_K)
 Sort By=ソート基準
@@ -218,6 +276,14 @@ All=全削除
 Active=このオブジェクトのみ削除
 Additional Options=追加設定
 Print Information=ログ表示
+[Relations@CameraTransform_K]
+Relations@CameraTransform_K=トランスフォームコピー@CameraTransform_K(Relations)
+Parent Layer=親レイヤー
+Additional Options=追加設定
+Influence=影響度
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
 [Transform]
 Transform=トランスフォーム(Transform)
 Position=位置
@@ -227,8 +293,8 @@ X Rotation=X回転
 Y Rotation=Y回転
 Z Rotation=Z回転
 Rotation Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
@@ -248,15 +314,20 @@ X Rotation=X回転
 Y Rotation=Y回転
 Z Rotation=Z回転
 Rotation Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Mode=回転モード
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
 YZX Euler=YZXオイラー角
 ZXY Euler=ZXYオイラー角
 ZYX Euler=ZYXオイラー角
+Scale=スケール
+Relations=親子関係
 Parent Layer=親レイヤー
+Additional Options=追加設定
+Influence=影響度
 Layer Reference=レイヤー指定
 Absolute=絶対指定
 Relative=相対指定
@@ -267,8 +338,8 @@ X Rotation=X回転
 Y Rotation=Y回転
 Z Rotation=Z回転
 Rotation Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
@@ -279,6 +350,8 @@ Zoom=拡大率
 [Track@CameraTransform_K]
 Track@CameraTransform_K=トラック@CameraTransform_K(Track)
 Target Layer=目標レイヤー
+Track Axis=トラック軸
+Additional Options=追加設定
 Layer Reference=レイヤー指定
 Absolute=絶対指定
 Relative=相対指定
@@ -617,6 +690,7 @@ Edge Detection=エッジ抽出
 Intensity=強さ
 Threshold=しきい値
 Pool=使用文字
+Font=フォント
 Color=色調
 Source=使用ソース
 Image=画像
@@ -719,8 +793,8 @@ Z=Z
 Position=位置
 Rotation=回転
 Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
@@ -801,8 +875,8 @@ X=X
 Y=Y
 Z=Z
 Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
@@ -825,6 +899,7 @@ Edge Detection=エッジ抽出
 Intensity=強さ
 Threshold=しきい値
 Pool=使用文字
+Font=フォント
 Tint=色調
 Source=使用ソース
 Image=画像
@@ -857,8 +932,8 @@ X=X
 Y=Y
 Z=Z
 Mode=回転モード
-Quaternion=クォータニオン
-Axis Angle=任意軸回転
+Quaternion=クォータニオン(WXYZ)
+Axis Angle=軸の角度
 XYZ Euler=XYZオイラー角
 XZY Euler=XZYオイラー角
 YXZ Euler=YXZオイラー角
@@ -1421,8 +1496,15 @@ StaticNoise=砂嵐ノイズ
 ; 🈂️行氏のスクリプト https://github.com/SagyouDarui900
 [GB_Style]
 GB_Style=ゲームボーイ風(GB_Style)
+[gliter]
+gliter=キラキラ化(gliter)
+[glow_sd]
+glow_sd=グロー_sd(glow_sd)
 [OpticsCompensation_s]
 OpticsCompensation_s=レンズ補正(OpticsCompensation_s)
+[Quantize]
+Quantize=低画質化(Quantize)
+
 
 ; めかど氏のスクリプト https://note.com/mekado
 [RadialSpike]
