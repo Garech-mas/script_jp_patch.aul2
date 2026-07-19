@@ -1332,6 +1332,12 @@ Comp Ratio=比率
 Comp Attack=アタック
 Comp Release=リリース
 Makeup Gain=補正ゲイン
+Upward Comp Settings=アップワードコンプ設定
+Upward Thresh=しきい値
+Upward Ratio=比率
+Upward Range=範囲
+Upward Attack=アタック
+Upward Release=リリース
 Limiter=リミッター
 [External Audio Processing 2 Spatial]
 External Audio Processing 2 Spatial=EAP2:ディレイ(Spatial)
