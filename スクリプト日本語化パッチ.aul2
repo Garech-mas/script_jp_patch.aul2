@@ -1,4 +1,4 @@
-; スクリプト日本語化パッチ / Copyright (c) 2026 Garech / 最終確認: 2026.07.02
+; スクリプト日本語化パッチ / Copyright (c) 2026 Garech / 最終確認: 2026.08.23
 ; ----------------------------------------------------------
 ; 【重要】利用する場合のお願い
 ; ○スクリーンショットや動画等で、他人へ編集画面を共有する際は、「スクリプト日本語化パッチを使用中である」旨を必ず明記してください。
@@ -11,7 +11,7 @@
 ; ----------------------------------------------------------
 ; ※各スクリプト製作者様・翻訳者様へ
 ; 1. 翻訳削除の要望には対応いたしかねます。
-;    ただし、翻訳により著しく可読性・利便性を損なう場合に限り、例外的に検討する場合があります。
+;    ただし、翻訳により著しく可読性・利便性を損なう場合、和訳が本ファイルと競合する場合に限り、例外的に検討することがあります。
 ; 2. 誤訳報告や翻訳追加要望などがあれば、お気軽にご連絡ください！
 ; ----------------------------------------------------------
 ; 本ファイルは MIT License のもとで配布されます。
@@ -20,7 +20,7 @@
 ;
 
 [Language]
-Information=スクリプト日本語化パッチ 2026.07.02 by Garech
+Information=スクリプト日本語化パッチ 2026.08.23 by Garech
 ; アクセスキー付き日本語リソース(弊作) が導入されている場合、自動的に適用されます
 ; https://github.com/Garech-mas/jp_akey.aul2
 SubLanguage=日本語(アクセスキー付き)
@@ -211,6 +211,20 @@ Dia Cross=交差 (Dia Cross)
 Flipper=ヒレ (Flipper)
 Starlish=ヒトデ (Starlish)
 Tiler=タイル (Tiler)
+[Handle]
+Handle=四隅アイコン(Handle)
+Source=使用ソース
+Image=画像
+Layer=レイヤー
+Layout=配置
+Padding=余白
+Transform=変形
+Rotation=回転
+Scale=拡大率
+Additional Options=追加設定
+Layer Reference=レイヤー指定
+Absolute=絶対指定
+Relative=相対指定
 [HaldCLUT_K]
 Level=レベル
 Resize Scene to LUT=シーンサイズをLUTに合わせる
@@ -822,7 +836,6 @@ Target=対象
 Local Space=文字を変形 (Local Space)
 World Space=座標を変形 (World Space)
 Tint=色調
-; Color=色
 Additional Options=追加設定
 Influence=影響度
 [Motion@FlowType_K]
@@ -890,9 +903,7 @@ Target=対象
 Local Space=文字を変形 (Local Space)
 World Space=座標を変形 (World Space)
 Blink=点滅
-;Blink::Duration=点滅周期
 Steps=明暗の段階数
-Opacity=不透明度
 Minimum=最小値
 Maximum=最大値
 Edge Detection=エッジ抽出
@@ -1231,7 +1242,6 @@ Saw=ノコギリ波
 White Noise=ホワイトノイズ
 Pink Noise=ピンクノイズ
 Frequency=周波数
-; オプトイン式の新バージョン用
 [Basic] Sine=基本：正弦波
 [Basic] Square=基本：矩形波
 [Basic] Triangle=基本：三角波
@@ -1257,8 +1267,7 @@ Note=音名
 [External Audio Processing 2]
 External Audio Processing 2=EAP2:VST適用
 General Settings=全体設定
-Wet=Wet
-; ↑Dry/Wetに関しては英語ママの方が視認性/認知度が高いため、英語残し
+Wet=エフェクト音
 Gain=ゲイン
 Apply All section (Deprecated)=全体に適用(廃止予定)
 Apply to L=左チャンネルに適用
@@ -1281,7 +1290,6 @@ Param 4=パラメータ４
 MIDI Settings=MIDI設定
 Recv ID=受信ノートID
 MIDI File=MIDIファイル
-Show Param List=パラメータ
 [External Audio Processing 2 Utility]
 External Audio Processing 2 Utility=EAP2:補助設定(Utility)
 Gain=ゲイン
@@ -1356,7 +1364,7 @@ Chorus (Each section)=コーラス (セクション毎)
 Flanger (Each section)=フランジャー (セクション毎)
 Tremolo (Each section)=トレモロ (セクション毎)
 Rate=周波数
-Depth=深さ
+Depth=変動量
 Feedback=フィードバック
 Delay=ディレイ時間
 Mix=ミックス
@@ -1373,8 +1381,7 @@ Bitcrush (Each section)=ビットクラッシュ (セクション毎)
 Drive=ドライブ
 Tone=トーン
 Bits=ビット数
-Downsample=Downsample
-; ↑「ダウンサンプリング」では文字数が増えすぎてしまう　「ﾀﾞｳﾝｻﾝﾌﾟﾘﾝｸﾞ」もあまりしたくないので、苦渋の策で英語残し。
+Downsample=ダウンサンプル
 Mix=ミックス
 Output=出力ゲイン
 [External Audio Processing 2 Maximizer]
@@ -1423,15 +1430,15 @@ Attack=アタック
 Release=リリース
 [External Audio Processing 2 Reverb]
 External Audio Processing 2 Reverb=EAP2:リバーブ(Reverb)
-Room Size=部屋サイズ
-Damping=減衰
+Room Size=空間の広さ
+Damping=高域の減衰
 Pre-Delay=プリディレイ
-Wet=Wet
+Wet=エフェクト音
 Mix=ミックス
 [External Audio Processing 2 Phaser]
 External Audio Processing 2 Phaser=EAP2:フェイザー(Phaser)
 Rate=周波数
-Depth=深さ
+Depth=揺れ幅
 Feedback=フィードバック
 Mix=ミックス
 [External Audio Processing 2 Pitch Shift]
@@ -1472,6 +1479,11 @@ External Audio Processing 2 MIDI Generator=EAP2:MIDI再生(MIDI Generator)
 [Retro] 8-bit Pulse=レトロ：8bit音
 [Drum] Kick=ドラム：キック
 [Syn] Super Saw=シンセ：スーパーソウ
+[External Audio Processing 2 Convolution Reverb]
+External Audio Processing 2 Convolution Reverb=EAP2:IRリバーブ(Convolution Reverb)
+Mix=ミックス
+[External Audio Processing 2 Volume]
+External Audio Processing 2 Volume=EAP2:音量(Volume)
 
 ; namacream氏のスクリプト https://x.com/namacream_/status/1945511815250940401
 [Datamosh]
@@ -1506,11 +1518,18 @@ GB_Style=ゲームボーイ風(GB_Style)
 gliter=キラキラ化(gliter)
 [glow_sd]
 glow_sd=グロー_sd(glow_sd)
+[Grid Noise Animator]
+Grid Noise Animator=グリッドノイズ(Grid Noise Animator)
 [OpticsCompensation_s]
 OpticsCompensation_s=レンズ補正(OpticsCompensation_s)
 [Quantize]
 Quantize=低画質化(Quantize)
-
+[StitchFrame]
+StitchFrame=波形フレーム(StitchFrame)
+[StreamRibbon]
+StreamRibbon=波形リボン(StreamRibbon)
+[TwoSidedRibbon]
+TwoSidedRibbon=両面リボン(TwoSidedRibbon)
 
 ; めかど氏のスクリプト https://note.com/mekado
 [RadialSpike]
@@ -1722,6 +1741,8 @@ MIDI_ChordDetection@DTMer Starter Kit=MIDIコード検出@DTMer Starter Kit(MIDI
 MIDI_ChordTone@DTMer Starter Kit=MIDIコード構成音表示@DTMer Starter Kit(MIDI_ChordTone)
 [MIDI_Visualizer@DTMer Starter Kit]
 MIDI_Visualizer@DTMer Starter Kit=MIDI表示@DTMer Starter Kit(MIDI_Visualizer)
+[MIDI_Visualizer_2@DTMer Starter Kit]
+MIDI_Visualizer_2@DTMer Starter Kit=MIDI表示2@DTMer Starter Kit(MIDI_Visualizer)
 [PlayBar@DTMer Starter Kit]
 PlayBar@DTMer Starter Kit=再生バー@DTMer Starter Kit(PlayBar)
 [PlayTime@DTMer Starter Kit]
@@ -1736,3 +1757,485 @@ StereoImager@DTMer Starter Kit=ステレオイメージャー@DTMer Starter Kit(
 TimeSignature@DTMer Starter Kit=拍子表示@DTMer Starter Kit(TimeSignature)
 [VolumeMeter@DTMer Starter Kit]
 VolumeMeter@DTMer Starter Kit=音量メーター@DTMer Starter Kit(VolumeMeter)
+
+; VRAMの魔術師氏のスクリプト(フィルタプラグイン)  https://github.com/vramwiz
+[Aul2Audio View]
+Aul2Audio View=波形/スペクトラム表示(Aul2Audio View)
+Source Layer=取得レイヤー
+Auto=自動
+Type=タイプ
+Equalizer Bars=イコライザーバー
+Wave Line=波形ライン
+Pixel Wave=ピクセル波形
+Filled Spectrum=塗りつぶしスペクトラム
+Pulse Wave=パルス波形
+Circular Spectrum=円形スペクトラム
+Mirror Bars=ミラーバー
+Vectorscope=ベクトルスコープ
+Comms Scope=Commsスコープ
+Circular Bars (3D)=(3D) 円形バー
+Radial Waveform (3D)=(3D) 放射状波形
+Spectrum Landscape (3D)=(3D) スペクトラム地形
+Waveform Tunnel (3D)=(3D) 波形トンネル
+Spectrum Waterfall (3D)=(3D) スペクトラムウォーターフォール
+Vectorscope Trail (3D)=(3D) ベクトルスコープトレイル
+Style=スタイル
+Solid=連続
+Blocks=ブロック
+Density=分割数
+Spacing=間隔
+Thickness=太さ
+Base Radius=基本半径
+Smooth=滑らかさ
+X Scale=X拡大率
+Y Scale=Y拡大率
+Z Scale=Z拡大率
+Spectrum Scale=周波数スケール
+Log=対数
+Linear=線形
+Low Hz=最低周波数(Hz)
+High Hz=最高周波数(Hz)
+High Boost=高域ブースト
+Color 1=色1
+Color 2=色2
+Color 3=色3
+Color Variation=配色
+1 Color=1色
+2 Color=2色
+3 Color=3色
+Rainbow=レインボー
+Warm=暖色
+Cool=寒色
+Pastel=パステル
+Neon=ネオン
+Mono=モノクロ
+Sepia=セピア
+Gold=ゴールド
+Silver=シルバー
+Fire=炎
+Ice=氷
+Water=水
+Aurora=オーロラ
+Starlight=星明かり
+Sunset=夕焼け
+Ocean=海
+Forest=森林
+Cyber=サイバー
+Retro Game=レトロゲーム
+Color Blend=色補間
+RGB=RGB
+HSV Short=HSV(短経路)
+HSV Long=HSV(長経路)
+[サウンドエフェクター]
+Delay=ディレイ (Delay)
+Dly: Use=ディレイを有効
+Dly: Stereo Mode=ステレオ化
+Normal=通常
+Ping-Pong=左右に反響
+Dly: Time(ms)=ディレイ時間(ms)
+Dly: Dry=原音
+Dly: Wet=エフェクト音
+Dly: Feedback=フィードバック
+EQ=イコライザー (EQ)
+EQ: Use=イコライザーを有効
+EQ: Mode=処理方式
+Low Cut=ローカット
+High Cut=ハイカット
+Band Pass=バンドパス
+EQ: LowCut(Hz)=ローカット(Hz)
+EQ: HighCut(Hz)=ハイカット(Hz)
+EQ: Mix=ミックス
+Compressor=コンプレッサー (Compressor)
+Comp: Use=コンプレッサーを有効
+Comp: Threshold(dB)=しきい値
+Comp: Ratio=比率
+Comp: Attack(ms)=アタック(ms)
+Comp: Release(ms)=リリース(ms)
+Comp: Makeup(dB)=補正ゲイン(dB)
+Comp: Mix=ミックス
+VoiceDrive=ボイスドライブ (VoiceDrive)
+Drive: Use=ボイスドライブを有効
+Drive: Drive(dB)=ドライブ(dB)
+Drive: Body=太さ
+Drive: Level(dB)=出力音量(dB)
+Drive: Mix=ミックス
+Distortion=ディストーション (Distortion)
+Dist: Use=ディストーションを有効
+Dist: Mode=処理方式
+Soft Clip=ソフトクリップ
+Hard Clip=ハードクリップ
+Dist: Drive(dB)=ドライブ(dB)
+Dist: Tone=トーン
+Dist: Level(dB)=出力音量(dB)
+Dist: Mix=ミックス
+Noise=ノイズ (Noise)
+Noise: Use=ノイズを有効
+Noise: Mode=処理方式
+White=ホワイトノイズ
+Crackle=クラックルノイズ
+Noise: Level(dB)=出力音量(dB)
+Noise: Mix=ミックス
+BitCrusher=ビットクラッシャー (BitCrusher)
+Crush: Use=ビットクラッシャーを有効
+Crush: BitDepth=ビット深度
+Crush: SampleHold=ダウンサンプル
+Crush: Mix=ミックス
+Tremble=音量揺れ (Tremble)
+Trem: Use=音量揺れを有効
+Trem: Rate(Hz)=揺れ速度(Hz)
+Trem: Depth=揺れ幅
+Trem: Mix=ミックス
+Wobble=ワブル (Wobble)
+Wob: Use=ワブルを有効
+Wob: Delay(ms)=遅延時間(ms)
+Wob: Depth(ms)=揺れ幅(ms)
+Wob: Rate(Hz)=揺れ速度(Hz)
+Wob: Mix=ミックス
+Pitch=ピッチ (Pitch)
+Pitch: Use=ピッチを有効
+Natural=音程と声色
+Pitch Only=音程のみ
+Formant Only=声色のみ
+Step=段階ピッチ変化
+Pitch: Mode=処理方式
+Pitch: Semitone=音程
+Pitch: Window(ms)=反応窓長(ms)
+Pitch: Formant=声色
+Pitch: Amount=補正の強さ
+Pitch: Step(semi)=段階変化幅
+Pitch: Rate(Hz)=段階切替速度
+Pitch: Mix=ミックス
+RingMod=リングモジュレーター (RingMod)
+Ring: Use=リングモジュレーターを有効
+Ring: Frequency(Hz)=周波数(Hz)
+Ring: Depth=変動量
+Ring: Mix=ミックス
+Muffle=こもり (Muffle)
+Muffle: Use=こもりを有効
+Muffle: Cutoff(Hz)=カットオフ(Hz)
+Muffle: Amount=強さ
+Muffle: Mix=ミックス
+Whisper/Breath=ささやき・息 (Whisper/Breath)
+Breath: Use=ささやき・息を有効
+Breath: Level(dB)=息の音量(dB)
+Breath: Tone=音色
+Breath: Mix=ミックス
+AutoGain=オートゲイン (AutoGain)
+AGain: Use=オートゲインを有効
+AGain: Target(dB)=目標音量(dB)
+AGain: Speed(ms)=追従速度(ms)
+AGain: MaxGain(dB)=最大補正量(dB)
+AGain: Mix=ミックス
+NoiseGate=ノイズゲート (NoiseGate)
+Gate: Use=ノイズゲートを有効
+Gate: Threshold(dB)=しきい値(dB)
+Gate: Attack(ms)=アタック(ms)
+Gate: Release(ms)=リリース(ms)
+Gate: Floor(dB)=最低音量(dB)
+ReverseReverb/Ghost=リバースリバーブ・ゴースト (ReverseReverb/Ghost)
+Ghost: Use=ゴーストを有効
+Ghost: Size(ms)=残響時間(ms)
+Ghost: Feedback=フィードバック
+Ghost: Wet=エフェクト音
+Ghost: Mix=ミックス
+Output=出力音量 (Output)
+Out: Use=出力音量を有効
+Out: Gain(dB)=出力ゲイン(dB)
+Limiter=リミッター (Limiter)
+Lim: Use=リミッターを有効
+Lim: Ceiling(dB)=最大音量(dB)
+Lim: Release(ms)=リリース(ms)
+Lim: Mix=ミックス
+Chorus=コーラス (Chorus)
+Cho: Use=コーラスを有効
+Cho: Stereo Mode=ステレオ化
+Wide=ワイド
+Cho: Delay(ms)=遅延時間(ms)
+Cho: Depth(ms)=深さ(ms)
+Cho: Rate(Hz)=揺れ速度(Hz)
+Cho: Mix=ミックス
+Reverb=リバーブ (Reverb)
+Rev: Use=リバーブを有効
+Rev: Type=残響タイプ
+Room=ルーム
+Hall=ホール
+Plate=プレート
+Rev: RoomSize=空間の広さ
+Rev: Damping=高域の減衰
+Rev: Dry=原音
+Rev: Wet=エフェクト音
+
+; 猫愛氏のスクリプト https://github.com/nea-c
+[Alignment]
+Alignment=配置EX(Alignment)
+[BezierPath]
+BezierPath=ベジェパス移動(BezierPath)
+[Loop]
+Loop=画像ループEX(Loop)
+[Scatter]
+Scatter=拡散(Scatter)
+progress=拡散度
+seed=シード
+x(min)=最小X
+x(max)=最大X
+y(min)=最小Y
+y(max)=最大Y
+z(min)=最小Z
+z(max)=最大Z
+rx(min)=最小X軸回転
+rx(max)=最大X軸回転
+ry(min)=最小Y軸回転
+ry(max)=最大Y軸回転
+rz(min)=最小Z軸回転
+rz(max)=最大Z軸回転
+zoom(min)=最小拡大率
+zoom(max)=最大拡大率
+[ZoomJustFit]
+ZoomJustFit=画面フィット(ZoomJustFit)
+
+; なたのこ氏のスクリプト https://github.com/Natadecoco2539
+[SoftAnchorBone]
+SoftAnchorBone=3点アンカーボーン(SoftAnchorBone)
+[TextBackplate]
+TextBackplate=テキスト背面図形(TextBackplate)
+
+; Gohankaiju氏のスクリプト https://github.com/Gohankaiju
+[rich-audio-spectrum]
+rich-audio-spectrum=リッチな音声波形(rich-audio-spectrum)
+Auto=自動
+Preview=プレビュー
+Balanced=バランス
+High=高品質
+Export=出力時
+
+; はるくん氏のスクリプト(フィルタプラグイン) https://github.com/Hallkun19
+[HL_Blobox]
+HL_Blobox=HL_領域トラッキング(HL_Blobox)
+
+; nctype氏のスクリプト https://github.com/nctype
+[AutoBlendLight]
+AutoBlendLight=自動背景なじませ(AutoBlendLight)
+[Pixelizer]
+Pixelizer=ドット絵化(Pixelizer)
+[RainOnPane]
+RainOnPane=雨濡れ窓ガラス(RainOnPane)
+
+; 93氏のスクリプト https://www.dropbox.com/scl/fo/x4l4mepoe5w7d9mtt332g/ACON0AjzXe3vxxIT0-4Hl6k?rlkey=w17rfsb61pyhdbws5dfo7jqc9
+[GCv2[Draw(Mein)]@GetColor-V2R]
+GCv2[Draw(Mein)]@GetColor-V2R=GCv2:描画(メイン)@GetColor-V2R(Draw(Mein))
+Size=点サイズ
+ScaleX=Xスケール
+ScaleY=Yスケール
+Form=形状
+alpha二値=透明度を二値化
+└ mode[0/3]=└ モード(0~3)
+└ form影響=└ 形状影響
+回転ﾓｰﾄﾞ[0/2]=回転ﾓｰﾄﾞ(0~2)
+Blend=合成モード
+alpha二値ﾀｲﾌﾟ=描画の透明度のみ二値化
+[GCv2[Position]@GetColor-V2R]
+GCv2[Position]@GetColor-V2R=GCv2:移動@GetColor-V2R(Position)
+PosX=X位置
+PosY=Y位置
+PosZ=Z位置
+random=ランダム
+└ mode[xyz]=└ モード(0~3)
+RandAmount[xyz]=ランダム量[xyz]
+Random(add)=ランダム加算
+Pos(add)=位置加算
+AffectNoise=ノイズへの影響
+[GCv2[Scale]@GetColor-V2R]
+GCv2[Scale]@GetColor-V2R=GCv2:拡大率@GetColor-V2R(Scale)
+ScaleX=X拡大率
+ScaleY=Y拡大率
+ScaleZ=Z拡大率
+SCALE=共通拡大率
+SCALE ⇔ random=共通拡大率をランダムに発散
+└ mode[xyz]=└ モード(0~3)
+random[xyz]=ランダム[xyz]
+randamdirection=ランダム方向
+Scale(add)=拡大率加算
+[GCv2[Twist]@GetColor-V2R]
+GCv2[Twist]@GetColor-V2R=GCv2:ねじり@GetColor-V2R(Twist)
+TwistX=Xねじり
+TwistY=Yねじり
+TwistZ=Zねじり
+random=ランダム
+Scatter=散乱
+└ mode[xyz]=└ モード(0~3)
+回転ﾓｰﾄﾞ[0/4]=回転モード(0~4)
+scale=スケール
+evolution[xyz]=展開[xyz]
+ｱﾝｶｰ(ﾚｲﾔ)=アンカー(レイヤー)
+random[xyx]=ランダム量[xyz]
+[GCv2[Noise]@GetColor-V2R]
+GCv2[Noise]@GetColor-V2R=GCv2:ノイズ@GetColor-V2R(Noise)
+Scale=周期
+Lacunary=サブスケール
+Gain=サブ影響度
+Affect=ランダム影響度
+NoiseScale[xyz]=ノイズ周期[xyz]
+Octaves=複雑度
+└ Lacunarity=└ スケール倍率
+└ GainMax=└ 影響度倍率
+EvolutionTime=変化速度
+Wind X=速度X
+Wind Y=速度Y
+Wind Z=速度Z
+Offset[xyz]=オフセット[xyz]
+UV⇔Global=UV⇔グローバル
+[GCv2[Delay]@GetColor-V2R]
+GCv2[Delay]@GetColor-V2R=GCv2:遅延@GetColor-V2R(Delay)
+time=時間
+HSLA=HSLA
+XYCDR=XYCDR
+random=ランダム
+invert=反転
+[GCv2[ColorShift]@GetColor-V2R]
+GCv2[ColorShift]@GetColor-V2R=GCv2:色情報ずらし@GetColor-V2R(ColorShift)
+H=色相(H)
+S=彩度(S)
+L=輝度(L)
+A=透明度(A)
+U=横方向処理順(U)
+V=縦方向処理順(V)
+W=奥行複製数(W)
+Amplitude=強さ
+smooth=滑らかさ
+[GCv2[Field]@GetColor-V2R]
+GCv2[Field]@GetColor-V2R=GCv2:フィールド@GetColor-V2R(Field)
+Radius=影響半径
+Strength=押し出し強度
+Mode=モード
+FieldLayer=フィールドレイヤー
+Radius(add)=半径加算
+ｱﾝｶｰ=アンカー
+zoom影響度=拡大率影響度
+alpha影響度=透明度影響度
+random[xyz]=ランダム[xyz]
+[GCv2[Depth]@GetColor-V2R]
+GCv2[Depth]@GetColor-V2R=GCv2:被写界深度@GetColor-V2R(Depth)
+focal=焦点距離
+DOF=被写界深度
+Fade=フェード
+Blur=ぼかし
+farColor=遠方色
+nearColor=近方色
+[GCv2[DrawLine]@GetColor-V2R]
+GCv2[DrawLine]@GetColor-V2R=GCv2:線描画@GetColor-V2R(DrawLine)
+Width=線幅
+Maxdist=最大距離
+Opacity=不透明度
+Progress=進捗度
+LineMode[0/2]=線モード(0~2)
+VanishFade=消失フェード
+Maxnum(mode2)=最大数(ﾓｰﾄﾞ2)
+Colfade(mode0)=色フェード(ﾓｰﾄﾞ0)
+Shuffle(mode>0)=シャッフル(ﾓｰﾄﾞ>0)
+Antialias=アンチエイリアス
+Blend=合成モード
+[GCv2[DrawPolygon]@GetColor-V2R]
+GCv2[DrawPolygon]@GetColor-V2R=GCv2:ポリゴン描画@GetColor-V2R(DrawPolygon)
+Opacity=不透明度
+Diffuse=ライト影響度
+Ambient=環境光影響度
+Specular=スペキュラ
+OpacityRand=透明度ランダム
+AmbientCol=環境光色
+Blend[-1/13]=合成ﾓｰﾄﾞ[-1~13]
+Texture[1/0]=テクスチャ[1/0]
+Triangles=三角形分割
+VanishStart=消失開始距離
+└ Fade=└ フェード
+Shininess=光沢
+└ Blend[0/13]=└合成ﾓｰﾄﾞ[0~13]
+└ Falloff[1/0]=└ 減衰[1/0]
+[GCv2[Light(別ﾚｲﾔーで使用)]@GetColor-V2R]
+GCv2[Light(別ﾚｲﾔーで使用)]@GetColor-V2R=GCv2:ライト(別レイヤーで使用)@GetColor-V2R(Light)
+Intensity=強度
+Radius=範囲
+Falloff=減衰
+V-Lange=光距離
+Visible=ライト風に描画
+Delete=光源を削除
+color=色
+ParallelLight=平行光源
+└ TargetLayer=└ 対象レイヤー
+Radius(add)=半径加算
+[マテリアル[Lighting]@GetColor-V2R]
+Amount=強度
+Diffuse=ライト影響度
+Ambient=環境光影響度
+Specular=スペキュラ
+rotation=回転
+Shininess=光沢
+Ambientcol=環境光色
+DeleteLight=光源を削除
+Specularfalloff=スペキュラ減衰
+normcol=法線色
+[MorphDots [Main]@MorphDots]
+MorphDots [Main]@MorphDots=描画(メイン)@MorphDots(Main)
+Progress=進捗度
+Scale=スケール
+Random=ランダム
+Delay=遅延
+Bordering=輪郭ドット化 (✕AviUtl2)
+Shape=図形
+└ [size/line]=└ [サイズ/線幅]
+Gap[w/h]=間隔[横/縦]
+Order(0/7)=順序(0~7)
+Ease(0/41)=イージング(0~41)
+Orginalpos=元の位置に移動
+└ multiDraw=└ 複数描画
+DrawLine(0/2)=線描画(0~2)
+└ width=└ 線幅
+└ [dist/fade]=└ [距離/フェード]
+└ maxnum=└ 線の最大数
+└ sortBydist=距離でソート
+[MorphDots [Option]@MorphDots]
+MorphDots [Option]@MorphDots=オプション@MorphDots(Option)
+Lineplog=線進捗度
+Linedelay=線遅延
+BlendOrg=元画像合成度
+Extrude=押し出し
+Rotation=グループ回転
+Z-Copies=Z軸複製数
+Z-Rotation=Z軸回転
+ShuffleIndex=ｲﾝﾃﾞｯｸｽｼｬｯﾌﾙ
+billboard=ドットをカメラに向ける
+Borderoffset=輪郭オフセット(✕)
+└ position=└ 位置(✕AviUtl2)
+ColRandom=色ランダム
+[MorphDots [Depth]@MorphDots]
+MorphDots [Depth]@MorphDots=被写界深度@MorphDots(Depth)
+Focal=焦点
+Ditance=焦点距離
+Fade=フェード
+blur=ぼかし
+focuslock=焦点距離を固定
+lensblur=レンズブラー
+FadeAlpha=透明度フェード
+Fadezoom=拡大率フェード
+amountNoise=ノイズ強度
+Far[dst/fade]=遠方[距離/フェード]
+Near[dst/fade]=近方[距離/フェード]
+layer=焦点面レイヤー
+Effect(self)=自身に適用
+[MorphDots [Noise]@MorphDots]
+MorphDots [Noise]@MorphDots=ノイズ@MorphDots(Noise)
+Scale=周期
+lacunary=サブスケール
+gain=サブ影響度
+Amplitude=強さ
+AffectPos=位置影響度
+└ color=└ 色影響度
+└ alpha=└ 透明度影響度
+└ zoom=└ 拡大率影響度
+Noisescale=ノイズ周期[xyz]
+└ octaves=複雑度
+└ wind=速度[xyz]
+└ UV⇔gloal=UV⇔グローバル
+Layerfield=レイヤーフィールド
+└ Layer=└ レイヤー
+└[radius/fall]=└[半径/減衰]
+Effect(self)=自身に適用

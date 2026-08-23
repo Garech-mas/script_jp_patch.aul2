@@ -31,7 +31,7 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 
 ## フィードバック
 - 誤訳報告や翻訳追加要望などがあれば、お気軽にご連絡ください！
-- 翻訳削除の要望には原則対応していませんが、可読性・利便性を著しく損なう場合に限り検討することがあります。
+- 翻訳削除の要望には原則対応していませんが、可読性・利便性を著しく損なう場合、和訳が本ファイルと競合する場合に限り検討することがあります。
 
 ## ライセンス
 本ファイルは MIT License のもとで配布されます。
@@ -63,6 +63,7 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | KORAREI | [FlexUI](https://scrapbox.io/korarei/FlexUI) | 汎用トラックバー |
 | KORAREI | [Kaleidoscope_K](https://github.com/korarei/AviUtl2_Kaleidoscope_K_Script) | 万華鏡K |
 | KORAREI | [HaldCLUT_K](https://github.com/korarei/AviUtl2_ColorLUT_K_Plugin) | HaldCLUT_K(パラメータのみ和訳) |
+| KORAREI | [Handle](https://gist.github.com/korarei/7a8aefa23a12ea97d02cc7943e05a4dd) | 四隅アイコン |
 | KORAREI | [NeutralLUT_K](https://github.com/korarei/AviUtl2_ColorLUT_K_Plugin) | NeutralLUT_K(パラメータのみ和訳) |
 | KORAREI | [PixelSorter_K](https://github.com/korarei/AviUtl2_PixelSorter_K_Script) | ピクセルソートK |
 | KORAREI | [ObjectMotionBlur_LK](https://github.com/korarei/AviUtl2_ObjectMotionBlur_LK_Script) | モーションブラーLK |
@@ -130,16 +131,20 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | ぞぷてい | [Reverb Effect](https://github.com/zopty/reverb-auf2) | リバーブ |
 | ぞぷてい | [SmoothNoise](https://github.com/zopty/SmoothNoise) | スムースノイズ |
 | ぞぷてい | [TrueNoise](https://gist.github.com/zopty/273ce58f4cf2cb900a08b5ce7f246cf4) | 本当のノイズ |
-| Book-0225 | [External Audio Processing 2](https://github.com/Book-0225/aviutl2_External_Audio_Processing) | EAP2 (音声操作系フィルタプラグイン) |
+| Book-0225 | [External Audio Processing 2](https://github.com/Book-0225/aviutl2_External_Audio_Processing) | EAP2 (音声処理などを行うプラグイン)<br>(※翻訳フィルタが多いため割愛) |
 | namacream | [Datamosh](https://x.com/namacream_/status/1945511815250940401) | データモッシュ |
 | namacream | [MiterOutline](https://x.com/namacream_/status/1945511815250940401) | 角立ち縁取り |
 | namacream | [MiterText](https://x.com/namacream_/status/1945511815250940401) | 角立ちテキスト |
 | namacream | [TV Simulator](https://x.com/namacream_/status/1945511815250940401) | レトロテレビ風 |
 | 🈂️行 | [GB_Style](https://github.com/SagyouDarui900/AviUtl2-Script-GB_Style) | ゲームボーイ風 |
 | 🈂️行 | [gliter](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | キラキラ化 |
+| 🈂️行 | [Grid Noise Animator](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | グリッドノイズ |
 | 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | グロー_sd |
 | 🈂️行(移植) | [OpticsCompensation_s](https://github.com/SagyouDarui900/OpticsCompensation_s_for_AviUtl2) | レンズ補正 |
 | 🈂️行 | [Quantize](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 低画質化 |
+| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形フレーム |
+| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形リボン |
+| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 両面リボン |
 | めかど | [RadialSpike](https://note.com/mekado/n/n6eb31fcc498b) | 放射とげとげ変形 |
 | ced | [MIDI Info Object](https://c30.booth.pm/items/8420669)    | MIDI情報オブジェクト    |
 | ced | [MIDI Source](https://c30.booth.pm/items/8420669)         | MIDI共有ソース       |
@@ -160,6 +165,7 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | 甘井ふたば | [MIDI_ChordDetection@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)  | MIDIコード検出@DTMer Starter Kit    |
 | 甘井ふたば | [MIDI_ChordTone@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)       | MIDIコード構成音表示@DTMer Starter Kit |
 | 甘井ふたば | [MIDI_Visualizer@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)      | MIDI表示@DTMer Starter Kit       |
+| 甘井ふたば | [MIDI_Visualizer_2@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)      | MIDI表示2@DTMer Starter Kit       |
 | 甘井ふたば | [PlayBar@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)              | 再生バー@DTMer Starter Kit         |
 | 甘井ふたば | [PlayTime@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)             | 再生時間表示@DTMer Starter Kit       |
 | 甘井ふたば | [SoundSync_Cumulative@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad) | 音声同期(累積)@DTMer Starter Kit     |
@@ -167,8 +173,29 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | 甘井ふたば | [StereoImager@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)         | ステレオイメージャー@DTMer Starter Kit   |
 | 甘井ふたば | [TimeSignature@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)        | 拍子表示@DTMer Starter Kit         |
 | 甘井ふたば | [VolumeMeter@DTMer Starter Kit](https://tourmaline-rock-7c0.notion.site/AviUtl-Script-178bea655f6480208a75fc94e60244ad)          | 音量メーター@DTMer Starter Kit       |
+| VRAMの魔術師 | [Aul2Audio View](https://github.com/vramwiz/Aul2AudioFilter) | 波形/スペクトラム表示 |
+| VRAMの魔術師 | [サウンドエフェクター](https://github.com/vramwiz/Aul2AudioFilter) | サウンドエフェクター |
+| 猫愛 | [Alignment](https://github.com/nea-c/aviutl2_script_Alignment) | 配置EX |
+| 猫愛 | [BezierPath](https://github.com/nea-c/aviutl2_script_BezierPath) | ベジェパス移動 |
+| 猫愛 | [Loop](https://github.com/nea-c/aviutl2_script_Loop) | 画像ループEX |
+| 猫愛 | [Scatter](https://github.com/nea-c/aviutl2_script_Scatter) | 拡散 |
+| 猫愛 | [ZoomJustFit](https://github.com/nea-c/aviutl2_script_ZoomJustFit) | 画面フィット |
+| なたのこ | [SoftAnchorBone](https://github.com/Natadecoco2539/AviUtl2-SoftAnchorBone) | 3点アンカーボーン |
+| なたのこ | [TextBackplate](https://github.com/Natadecoco2539/AviUtl2-TextBackplate) | テキスト背面図形 |
+| Gohankaiju | [rich-audio-spectrum](https://github.com/Gohankaiju/aviutl2-rich-audio-spectrum) | リッチな音声波形 |
+| はるくん | [HL_Blobox](https://github.com/Hallkun19/HL_Blobox-for-aul2) | HL_領域トラッキング |
+| nctype | [AutoBlendLight](https://github.com/nctype/aviutl2_script_AutoBlendLight) | 自動背景なじませ |
+| nctype | [Pixelizer](https://github.com/nctype/aviutl2_script_Pixelizer) | ドット絵化 |
+| nctype | [RainOnPane](https://github.com/nctype/aviutl2_script_RainOnPane) | 雨濡れ窓ガラス |
+| 93 | [GetColor-V2R](https://www.dropbox.com/scl/fo/x4l4mepoe5w7d9mtt332g/ACON0AjzXe3vxxIT0-4Hl6k?rlkey=w17rfsb61pyhdbws5dfo7jqc9) | GCv2（オブジェクトの粒子化/加工を行うスクリプト）<br>(※翻訳フィルタが多いため割愛) |
 
 ## 更新履歴
+`2026.08.23`
+- GetColorV2R の翻訳を追加 (93氏のスクリプト)
+- KORAREI氏、🈂️行氏、猫愛氏、なたのこ氏、Gohankaiju氏、nctype氏のスクリプトの和名・翻訳を追加
+- VRAMの魔術師氏、はるくん氏のフィルタプラグインの和名・翻訳を追加
+- External Audio Processing 2 v0.0.36 に対応、いくつかの翻訳を追加・修正
+
 `2026.07.02`
 - PageRoll_S の和名を追加 (σ軸氏のスクリプト)
 - ColoredCollar_S の和名を変更 (ふち色縁取りσ→色付き縁取りσ)
