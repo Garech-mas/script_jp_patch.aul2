@@ -142,9 +142,9 @@ AviUtl2を起動し、ダウンロードしたZIPファイルをプレビュー�
 | 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | グロー_sd |
 | 🈂️行(移植) | [OpticsCompensation_s](https://github.com/SagyouDarui900/OpticsCompensation_s_for_AviUtl2) | レンズ補正 |
 | 🈂️行 | [Quantize](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 低画質化 |
-| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形フレーム |
-| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形リボン |
-| 🈂️行 | [glow_sd](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 両面リボン |
+| 🈂️行 | [StitchFrame](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形フレーム |
+| 🈂️行 | [StreamRibbon](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 波形リボン |
+| 🈂️行 | [TwoSidedRibbon](https://github.com/SagyouDarui900/AviUtl2_Script_SagyouDarui) | 両面リボン |
 | めかど | [RadialSpike](https://note.com/mekado/n/n6eb31fcc498b) | 放射とげとげ変形 |
 | ced | [MIDI Info Object](https://c30.booth.pm/items/8420669)    | MIDI情報オブジェクト    |
 | ced | [MIDI Source](https://c30.booth.pm/items/8420669)         | MIDI共有ソース       |
